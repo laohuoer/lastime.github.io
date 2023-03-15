@@ -119,14 +119,14 @@ iframe {
     margin-left: -100px;
     margin-top: 70px;
     position: absolute;
-    background-image: url("https://ae01.alicdn.com/kf/Uf843afd8be324a4090847c07638c8747c.jpg");
+    background-image: url("./img/loadinglogo.jpg");
     background-size: cover;
     z-index: 20000001;
 }
 
 .loading .back {
     position: absolute;
-    background-image: url("https://ae01.alicdn.com/kf/Uf23fc428d43f46278162cc6e16d84d25S.jpg");
+    background-image: url("./img/loadingback.jpg");
     background-size: cover;
     z-index: 20000000;
 }
