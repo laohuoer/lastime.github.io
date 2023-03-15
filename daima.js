@@ -1,10 +1,7 @@
 document.onreadystatechange = function () { //即在加载的过程中执行下面的代码
     if (document.readyState == "uninitialized") {
         $('.loading').show();
-    }
-
-    if (document.readyState == "loading") {
-        $('.loading').show();
+        $('#border').show();
     }
 
     if (document.readyState == "complete") { //complete加载完成

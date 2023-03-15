@@ -126,7 +126,7 @@ iframe {
 
 .loading .back {
     position: absolute;
-    background-image: url("./img/loadingback.jpg");
+    background-image: url("./img/loadingbg.jpg");
     background-size: cover;
     z-index: 20000000;
 }

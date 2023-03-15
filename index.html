@@ -17,1387 +17,1389 @@
 <!-- html页面主体 --> 
 <body>
     <!-- 边框 --> 
-    <div id="border"></div>
+    <div id="border">
+    </div>
 
-    <!-- 画布 --> 
-    <div id="stage">
+<div id="stage">
 
-        <!-- 转场 --> 
-        <div class="change">            <span   class="change leftchange"></span>
-            <span   class="change rightchange"></span>
+    <!-- 转场 --> 
+    <div class="change">            
+        <span   class="change leftchange"></span>
+        <span   class="change rightchange"></span>
+    </div>
+
+    <!-- 加载页面 --> 
+    <div class="loading">
+        <div class="loading logo"></div>
+        <div class="loading back"></div>
+    </div>
+
+    <!-- 首页 --> 
+    <div class="first">
+        <div   class="first qicheng" onclick="go1()"></div>
+        <div   class="first shuoming" onclick="go2()"></div>
+        <div   class="first fankui" onclick="go3()"></div>
+        <div   class="first zhixie" onclick="go4()"></div>
+        <div   class="first back"></div>
+    </div>
+
+    <!-- 教程说明 --> 
+    <div class="jiaochengshuoming">
+        <div class="jiaochengshuomingbg"></div>  
+        <div   class="backfirst2" onclick="back2()"></div>
+    </div>
+
+    <!-- 评分反馈 --> 
+    <div class="pingfenfankui">
+        <div class="pingfenfankuibg"></div>
+        <div class="backfirst3" onclick="back3()"></div>
+        <div class="star">
+            <div class="yellowstar"></div>
+            <div class="star1" onclick="star1()"></div>
+            <div class="star2" onclick="star2()"></div>
+            <div class="star3" onclick="star3()"></div>
+            <div class="star4" onclick="star4()"></div>
+            <div class="star5" onclick="star5()"></div>
+            <textarea cols="6" rows="1" id="fankui" ></textarea>
         </div>
+        <div class="tijiao" onclick="tijiao()"></div>
+        <div class="tijiaowancheng"></div>
+        <div class="tijiaowanchengbtn" onclick="tijiaowancheng()"></div>
 
-        <!-- 加载页面 --> 
-        <div class="loading">
-            <div class="loading logo"></div>
-            <div class="loading back"></div>
-        </div>
+    </div>
 
-        <!-- 首页 --> 
-        <div class="first">
-            <div   class="first qicheng" onclick="go1()"></div>
-            <div   class="first shuoming" onclick="go2()"></div>
-            <div   class="first fankui" onclick="go3()"></div>
-            <div   class="first zhixie" onclick="go4()"></div>
-            <div   class="first back"></div>
-        </div>
+    <!-- 特别鸣谢 --> 
+    <div class="tebiemingxie">
+        <div class="tebiemingxiebg"></div>
+        <div   class="backfirst4" onclick="back4()"></div>
+    </div>
 
-        <!-- 教程说明 --> 
-        <div class="jiaochengshuoming">
-            <div class="jiaochengshuomingbg"></div>  
-            <div   class="backfirst2" onclick="back2()"></div>
-        </div>
+    <!-- 音乐 --> 
+    <div class="music">
+        <div   class="musicon" onclick="jingyin()"></div>
+        <div   class="musicoff" onclick="kaishengyin()"></div>
+    </div>
 
-        <!-- 评分反馈 --> 
-        <div class="pingfenfankui">
-            <div class="pingfenfankuibg"></div>
-            <div class="backfirst3" onclick="back3()"></div>
-            <div class="star">
-                <div class="yellowstar"></div>
-                <div class="star1" onclick="star1()"></div>
-                <div class="star2" onclick="star2()"></div>
-                <div class="star3" onclick="star3()"></div>
-                <div class="star4" onclick="star4()"></div>
-                <div class="star5" onclick="star5()"></div>
-                <textarea cols="6" rows="1" id="fankui" ></textarea>
-            </div>
-            <div class="tijiao" onclick="tijiao()"></div>
-            <div class="tijiaowancheng"></div>
-            <div class="tijiaowanchengbtn" onclick="tijiaowancheng()"></div>
-
-        </div>
-
-        <!-- 特别鸣谢 --> 
-        <div class="tebiemingxie">
-            <div class="tebiemingxiebg"></div>
-            <div   class="backfirst4" onclick="back4()"></div>
-        </div>
-    
-        <!-- 音乐 --> 
-        <div class="music">
-            <div   class="musicon" onclick="jingyin()"></div>
-            <div   class="musicoff" onclick="kaishengyin()"></div>
-        </div>
-
-        <!-- 菜单 --> 
-        <div class="main">
-            <div   class="main backfirst" onclick="back1()"></div>
-            <div   class="main ask" onclick="mainaskon()"></div>
-          
-            <!-- 情报站 -->
-            <div class="main qingbaozhan" onclick="qingbaozhankai()"></div>
-
-            <div class="main tag1" onclick="tag1on()"></div>
-            <div id="tag-qingbaozhan">
-                <div class="chazi1" onclick="tag1off()"></div>
-                <div class="tag-content1"></div>
-            </div>
-
-            <!-- 旧闻录 -->
-            <div class="main jiuwenlu" onclick="tanjiuwenlu()"></div>
-
-            <div class="main tag2" onclick="tag2on()"></div>
-            <div id="tag-jiuwenlu">
-                <div class="chazi2" onclick="tag2off()"></div>
-                <div class="tag-content2"></div>
-            </div>
-
-            <!-- iphonix -->
-            <div class="main iphonix" onclick=""></div>
-            <div class="main tag3" onclick="tag3on()"></div>
-            <div id="tag-iphonix">
-                <div class="chazi3" onclick="tag3off()"></div>
-                <div class="tag-content3"></div>
-            </div>
-
-            <div class="main iphonix" onclick="taniphonix()"></div>
-            <div id="shouji">
-                <div id="tijiaomima" onclick="tijiaomima()"></div>
-                <input id="password" type="password" name="密码输入框">
-                    <script>
-                    var password = 5045;
-                    var input = document.getElementById("password");
-                    </script>
-
-                <div class="main fenghuang" ></div>
-                <div class="main iphonix-in" ></div>
-                <div class="main iphonix-in2" ></div>
-                <div class="iphonixchazi2" onclick="guaniphonix1()"></div>
-                <div class="main black"></div>
-            </div>
-
-            <!-- 寻访图 --> 
-
-            <div class="main xunfangtu" onclick=""></div>
+    <!-- 菜单 --> 
+    <div class="main">
+        <div   class="main backfirst" onclick="back1()"></div>
+        <div   class="main ask" onclick="mainaskon()"></div>
         
-            <div class="main tag4" onclick="tag4on()"></div>
-            <div id="tag-xunfangtu">
-                <div class="chazi4" onclick="tag4off()"></div>
-                <div class="tag-content4"></div>
-            </div>
-            <div class="main xunfangtu" onclick="tanxunfangtu()"></div>
-            <div class="main bg"></div>
-            
+        <!-- 情报站 -->
+        <div class="main qingbaozhan" onclick="qingbaozhankai()"></div>
+
+        <div class="main tag1" onclick="tag1on()"></div>
+        <div id="tag-qingbaozhan">
+            <div class="chazi1" onclick="tag1off()"></div>
+            <div class="tag-content1"></div>
+        </div>
+
+        <!-- 旧闻录 -->
+        <div class="main jiuwenlu" onclick="tanjiuwenlu()"></div>
+
+        <div class="main tag2" onclick="tag2on()"></div>
+        <div id="tag-jiuwenlu">
+            <div class="chazi2" onclick="tag2off()"></div>
+            <div class="tag-content2"></div>
+        </div>
+
+        <!-- iphonix -->
+        <div class="main iphonix" onclick=""></div>
+        <div class="main tag3" onclick="tag3on()"></div>
+        <div id="tag-iphonix">
+            <div class="chazi3" onclick="tag3off()"></div>
+            <div class="tag-content3"></div>
+        </div>
+
+        <div class="main iphonix" onclick="taniphonix()"></div>
+        <div id="shouji">
+            <div id="tijiaomima" onclick="tijiaomima()"></div>
+            <input id="password" type="password" name="密码输入框">
+                <script>
+                var password = 5045;
+                var input = document.getElementById("password");
+                </script>
+
+            <div class="main fenghuang" ></div>
+            <div class="main iphonix-in" ></div>
+            <div class="main iphonix-in2" ></div>
+            <div class="iphonixchazi2" onclick="guaniphonix1()"></div>
+            <div class="main black"></div>
         </div>
 
         <!-- 寻访图 --> 
-        <div class="map">
 
-            <div id="renwunot">
-                <div id="renwunotbg"></div>
-                <div id="renwunotbtn" onclick="renwunotoff()"></div>
-            </div>
-
-                <div id="lock2" onclick="renwunoton()"></div>
-                <div id="lock3" onclick="renwunoton()"></div>
-                <div id="lock4" onclick="renwunoton()"></div>
-                <div id="lock5" onclick="renwunoton()"></div>
-                <div id="lock6" onclick="renwunoton()"></div>
-                <div id="lock7" onclick="renwunoton()"></div>
-                <div id="lock8" onclick="renwunoton()"></div>
-
-            <div id="renwushu"></div>
-            <div id="yinyangling"></div>
-            <div id="shengmingyin"></div>
-
-            <div id="huode"></div>
-            <div id="wancheng"></div>
-
-            <div   class="icon" id="a1" onclick="a1()"></div>
-                <div class="icon-word" id="a1w"></div>
-            <div class="choice-main" id="choice-main1">
-                <div class="choice" id="choice-a1-play" onclick="a1start()"></div>
-                <div class="choice" id="choice-a1-replay" onclick="a1restart()"></div>
-                <div id="choice-a1-bg"></div>
-            </div>
-
- 
-
-            <div   class="icon" id="a2" onclick="a2()"></div>
-                <div class="icon-word" id="a2w"></div>
-                <div class="choice-main" id="choice-main2">
-                <div class="choice" id="choice-a2-play" onclick="a2start()"></div>
-                <div class="choice" id="choice-a2-replay" onclick="a2restart()"></div>
-                <div id="choice-a2-bg"></div>
-            </div>
-
-   
-
-            <div   class="icon" id="a3" onclick="a3()"></div>
-                <div class="icon-word" id="a3w"></div>
-                <div class="choice-main" id="choice-main3">
-                <div class="choice" id="choice-a3-play" onclick="a3start()"></div>
-                <div class="choice" id="choice-a3-replay" onclick="a3restart()"></div>
-                <div id="choice-a3-bg"></div>
-            </div>
-           
-
-            <div   class="icon" id="a4" onclick="a4()"></div>
-                <div class="icon-word" id="a4w"></div>
-                <div class="choice-main" id="choice-main4">
-                <div class="choice" id="choice-a4-play" onclick="a4start()"></div>
-                <div class="choice" id="choice-a4-replay" onclick="a4restart()"></div>
-                <div id="choice-a4-bg"></div>
-            </div>
-            
-            <div   class="icon" id="a5" onclick="a5()"></div>
-                <div class="icon-word" id="a5w"></div>
-                <div class="choice-main" id="choice-main5">
-                <div class="choice" id="choice-a5-play" onclick="a5start()"></div>
-                <div class="choice" id="choice-a5-replay" onclick="a5restart()"></div>
-                <div id="choice-a5-bg"></div>
-            </div>
-            
-
-            <div   class="icon" id="a6" onclick="a6()"></div>
-                <div class="icon-word" id="a6w"></div>
-                <div class="choice-main" id="choice-main6">
-                <div class= "choice" id="choice-a6-play" onclick="a6start()"></div>
-                <div class= "choice" id="choice-a6-replay" onclick="a6restart()"></div>
-                <div id="choice-a6-bg"></div>
-            </div>
-           
-
-            <div   class="icon" id="a7" onclick="a7()"></div>
-                <div class="icon-word" id="a7w"></div>
-                <div class="choice-main" id="choice-main7">
-                <div class= "choice" id="choice-a7-play" onclick="a7start()"></div>
-                <div class= "choice" id="choice-a7-replay" onclick="a7restart()"></div>
-                <div id="choice-a7-bg"></div>
-            </div>
-
-           
-            <div   class="icon" id="a8" onclick="a8()"></div>
-                <div class="icon-word" id="a8w"></div>
-                <div class="choice-main" id="choice-main8">
-                <div class= "choice" id="choice-a8-play" onclick="a8start()"></div>
-                <div class= "choice" id="choice-a8-replay" onclick="a8restart()"></div>
-                <div id="choice-a8-bg"></div>
-            </div>
-   
-
-                <div    id="judge1">
-                    <div   id="judge1-sure" onclick="story1go()"></div>
-                    <div   id="judge1-notsure" onclick="closejudge1()"></div>
-                </div>
-
-                <div    id="judge2">
-                    <div   id="judge2-sure" onclick="story2go()"></div>
-                    <div   id="judge2-notsure" onclick="closejudge2()"></div>
-                </div>
-                <div    id="judge3">
-                    <div   id="judge3-sure" onclick="story3go()"></div>
-                    <div   id="judge3-notsure" onclick="closejudge3()"></div>
-                </div>
-                <div    id="judge4">
-                    <div   id="judge4-sure" onclick="story4go()"></div>
-                    <div   id="judge4-notsure" onclick="closejudge4()"></div>
-                </div>
-                <div    id="judge5">
-                    <div   id="judge5-sure" onclick="story5go()"></div>
-                    <div   id="judge5-notsure" onclick="closejudge5()"></div>
-                </div>
-                <div    id="judge6">
-                    <div   id="judge6-sure" onclick="story6go()"></div>
-                    <div   id="judge6-notsure" onclick="closejudge6()"></div>
-                </div>
-                <div    id="judge7">
-                    <div   id="judge7-sure" onclick="story7go()"></div>
-                    <div   id="judge7-notsure" onclick="closejudge7()"></div>
-                </div>
-
-                <div    id="judge8">
-                    <div   id="judge8-sure" onclick="story8go()"></div>
-                    <div   id="judge8-notsure" onclick="closejudge8()"></div>
-                </div>
-      
-                <div id="yijingwancheng"></div>
-                <div id="yijingwanchengbtn" onclick="yijingwanchengbtn()"></div>
-   
-                <div id="meiwancheng"></div>
-                <div id="meiwanchengbtn" onclick="meiwanchengbtn()"></div>
-
-            <div class="map bg"></div>
-            <div   class="map back2" onclick="tanback2()"></div>
-            <div   class="map ask2" onclick="tanask2()"></div>
-        </div>
-        
-        <!-- 情报站 --> 
-        <div id="qingbaozhanzong">
-            <div id="qingbaozhan1"></div>
-            <div id="qingbaozhan2"></div>
+        <div class="main xunfangtu" onclick=""></div>
     
-            <div id="qingbaozhanback" onclick="qingbaozhanback()"></div>
-            
-            <div id="renwushu2"></div>
-            <div id="yinyangling2"></div>
-            <div id="shengmingyin2"></div>
-            <div id="tujian2"></div>
-      
+        <div class="main tag4" onclick="tag4on()"></div>
+        <div id="tag-xunfangtu">
+            <div class="chazi4" onclick="tag4off()"></div>
+            <div class="tag-content4"></div>
         </div>
-
-         <!-- 菜单说明 --> 
-        <div id="mainask">
-            <div id="mainaskbg"></div>
-            <div id="mainaskoff" onclick="mainaskoff()"></div>
-        </div>
-
-        <!-- 旧闻录-说明 --> 
-        <div id="jiuwenluask1">
-            <div id="jiuwenluask1bg"></div>
-            <div id="jiuwenluask1off" onclick="jiuwenluask1off()"></div>
-        </div>
-
-        <!-- 阴阳令牌不足 --> 
-        <div id="notget">
-            <div id="notgetbg"></div>
-            <div id="notgetbtn" onclick="notget()"></div>
-        </div>
-
-        <!-- 生命印记不足 --> 
-        <div id="notget2">
-            <div id="notgetbg2"></div>
-            <div id="notgetbtn2" onclick="notget2()"></div>
-        </div>
-
-        <!-- 旧闻录1 --> 
-        <div class="book">
-            <div class="book bg"></div>
-            <div class="book back3" onclick="tanback3()"></div>
-            <div class="book ask3" onclick="jiuwenluask1on()"></div>
-
-            <div class="book jin" onclick="jin()"></div> 
-            <div class="book mu" onclick="mu()"></div>   
-            <div class="book shui" onclick="shui()"></div>            
-            <div class="book huo" onclick="huo()"></div>
-            <div class="book tu" onclick="tu()"></div>
-
-            <div id="jiuwenlunext" onclick="jiuwenlunext()"></div>
-        </div>
-
-        <!-- 旧闻录2 --> 
-        <div class="book2">
-            <div class="book2 bg"></div>
-            <div class="book2 back3" onclick="tanback3()"></div>
-            <div class="book2 haitianzhixin" onclick="haitianzhixin()"></div> 
-            <div class="book2 shenghuazhihai" onclick="shenghuazhihai()"></div>   
-            <div class="book2 xinghuozhijing" onclick="xinghuozhijing()"></div>            
-            <div class="book2 juanyongzhiqu" onclick="juanyongzhiqu()"></div>
-            <div class="book2 miluozhige" onclick="miluozhige()"></div>
-            <div id="jiuwenluback" onclick="jiuwenluback()"></div>
-        </div>
-
-        <!-- 旧闻录1-内部 --> 
-        <div id="book-pre">
-            <div class="jin-1"></div>
-            <div class="jinback" onclick="jinback()"></div>
-            <div class="jin-2"></div>
-            <div class="jingo" onclick="jingo()"></div>
-
-            <div class="mu-1"></div>
-            <div class="muback" onclick="muback()"></div>
-            <div class="mu-2"></div>
-            <div class="mugo" onclick="mugo()"></div>
-
-            <div class="shui-1"></div>
-            <div class="shuiback" onclick="shuiback()"></div>
-            <div class="shui-2"></div>
-            <div class="shuigo" onclick="shuigo()"></div>
-
-            <div class="huo-1"></div>
-            <div class="huoback" onclick="huoback()"></div>
-            <div class="huo-2"></div>
-            <div class="huogo" onclick="huogo()"></div>
-
-            <div class="tu-1"></div>
-            <div class="tuback" onclick="tuback()"></div>
-            <div class="tu-2"></div>
-            <div class="tugo" onclick="tugo()"></div>
-        </div>
-
-        <!-- 旧闻录2-内部 --> 
-        <div id="book-pre2">
-            <div class="haitianzhixin-1"></div>
-            <div class="haitianzhixin-back" onclick="haitianzhixinback()"></div>
-            <div class="haitianzhixin-2"></div>
-            <div class="haitianzhixingo" onclick="haitianzhixingo()"></div>
-
-            <div class="shenghuazhihai-1"></div>
-            <div class="shenghuazhihai-back" onclick="shenghuazhihaiback()"></div>
-            <div class="shenghuazhihai-2"></div>
-            <div class="shenghuazhihaigo" onclick="shenghuazhihaigo()"></div>
-
-            <div class="xinghuozhijing-1"></div>
-            <div class="xinghuozhijing-back" onclick="xinghuozhijingback()"></div>
-            <div class="xinghuozhijing-2"></div>
-            <div class="xinghuozhijinggo" onclick="xinghuozhijinggo()"></div>
-
-            <div class="juanyongzhiqu-1"></div>
-            <div class="juanyongzhiqu-back" onclick="juanyongzhiquback()"></div>
-            <div class="juanyongzhiqu-2"></div>
-            <div class="juanyongzhiqugo" onclick="juanyongzhiqugo()"></div>
-
-            <div class="miluozhige-1"></div>
-            <div class="miluozhige-back" onclick="miluozhigeback()"></div>
-            <div class="miluozhige-2"></div>
-            <div class="miluozhigego" onclick="miluozhigego()"></div>
-        </div>
-
-        <!-- 故事 --> 
-        <div id="story1">
-            
-        <div class="story1backhome" onclick="story1backhome()"></div>
-        <div class="story1backhomejudge">
-            <div   id="judge1-sure" onclick="story1backhome1()"></div>
-            <div   id="judge1-notsure" onclick="story1backhome2()"></div>
-            <div   id="backhoumejudegebg"></div>
-        </div>
-        <div class="nextbtn" id="story1-0-next" onclick="story1next0()"></div>
-        <div class="nextbtn" id="story1-1-next" onclick="story1next1()"></div>
-        <div class="nextbtn" id="story1-2-next" onclick="story1next2()"></div>
-        <div class="nextbtn" id="story1-3-next" onclick="story1next3()"></div>
-        <div class="nextbtn" id="story1-4-next" onclick="story1next4()"></div>
-        <div class="nextbtn" id="story1-5-next" onclick="story1next5()"></div>
-        <div class="nextbtn" id="story1-6-next" onclick="story1next6()"></div>
-        <div class="nextbtn" id="story1-7-next" onclick="story1next7()"></div>
-        <div class="nextbtn" id="story1-8-next" onclick="story1next8()"></div>
-        <div class="nextbtn" id="story1-9-next" onclick="story1next9()"></div>
-        <div class="nextbtn" id="story1-10-next" onclick="story1next10()"></div>
-        <div class="nextbtn" id="story1-11-next" onclick="story1next11()"></div>
-        <div class="nextbtn" id="story1-12-next" onclick="story1next12()"></div>
-        <div class="nextbtn" id="story1-13-next" onclick="story1next13()"></div>
-        <div class="nextbtn" id="story1-14-next" onclick="story1next14()"></div>
-        <div class="nextbtn" id="story1-15-next" onclick="story1next15()"></div>
-        <div class="nextbtn" id="story1-16-next" onclick="story1next16()"></div>
-        <div class="nextbtn" id="story1-17-next" onclick="story1next17()"></div>
-        <div class="nextbtn" id="story1-18-next" onclick="story1next18()"></div>
-        <div class="nextbtn" id="story1-19-next" onclick="story1next19()"></div>
-        <div class="nextbtn" id="story1-20-next" onclick="story1next20()"></div>
-        <div class="nextbtn" id="story1-21-next" onclick="story1next21()"></div>
-        <div class="nextbtn" id="story1-22-next" onclick="story1next22()"></div>
-        <div class="nextbtn" id="story1-23-next" onclick="story1next23()"></div>
-        <div class="nextbtn" id="story1-24-next" onclick="story1next24()"></div>
-        <div class="nextbtn" id="story1-25-next" onclick="story1next25()"></div>
-        <div class="nextbtn" id="story1-26-next" onclick="story1next26()"></div>
-        <div class="nextbtn" id="story1-27-next" onclick="story1next27()"></div>
-        <div class="nextbtn" id="story1-28-next" onclick="story1next28()"></div>
-        <div class="nextbtn" id="story1-29-next" onclick="story1next29()"></div>
-        <div class="nextbtn" id="story1-30-next" onclick="story1next30()"></div>
-        <div class="nextbtn" id="story1-31-next" onclick="story1next31()"></div>
-        <div class="nextbtn" id="story1-32-next" onclick="story1next32()"></div>
-        <div class="nextbtn" id="story1-33-next" onclick="story1next33()"></div>
-        <div class="nextbtn" id="story1-34-next" onclick="story1next34()"></div>
-        <div class="nextbtn" id="story1-35-next" onclick="story1next35()"></div>
-        <div class="nextbtn" id="story1-36-next" onclick="story1next36()"></div>
-        <div class="nextbtn" id="story1-37-next" onclick="story1next37()"></div>
-        <div class="nextbtn" id="story1-38-next" onclick="story1next38()"></div>
-        <div class="nextbtn" id="story1-39-next" onclick="story1next39()"></div>
-        <div class="nextbtn" id="story1-40-next" onclick="story1next40()"></div>
-        <div class="nextbtn" id="story1-41-next" onclick="story1next41()"></div>
-        <div class="nextbtn" id="story1-42-next" onclick="story1next42()"></div>
-        <div class="nextbtn" id="story1-43-next" onclick="story1next43()"></div>
-        <div class="nextbtn" id="story1-44-next" onclick="story1next44()"></div>
-        <div class="nextbtn" id="story1-45-next" onclick="story1next45()"></div>
-        <div class="nextbtn" id="story1-46-next" onclick="story1next46()"></div>
-        <div class="nextbtn" id="story1-47-next" onclick="story1next47()"></div>
-        <div class="nextbtn" id="story1-48-next" onclick="story1next48()"></div>
-        <div class="nextbtn" id="story1-49-next" onclick="story1next49()"></div>
-        <div class="nextbtn" id="story1-50-next" onclick="story1next50()"></div>
-        <div class="nextbtn" id="story1-51-next" onclick="story1next51()"></div>
-        <div class="nextbtn" id="story1-52-next" onclick="story1next52()"></div>
-        <div class="nextbtn" id="story1-53-next" onclick="story1next53()"></div>
-        <div class="nextbtn" id="story1-54-next" onclick="story1next54()"></div>
-        <div class="nextbtn" id="story1-55-next" onclick="story1next55()"></div>
-        <div class="nextbtn" id="story1-56-next" onclick="story1next56()"></div>
-        <div class="nextbtn" id="story1-57-next" onclick="story1next57()"></div>
-        <div class="nextbtn" id="story1-58-next" onclick="story1next58()"></div>
-        <div class="nextbtn" id="story1-59-next" onclick="story1next59()"></div>
-        <div class="nextbtn" id="story1-60-next" onclick="story1next60()"></div>
-
-        <div id="story1-0"></div>
-        <div id="story1-1"></div>
-        <div id="story1-2"></div>
-        <div id="story1-3"></div>
-        <div id="story1-4"></div>
-        <div id="story1-5"></div>
-        <div id="story1-6"></div>
-        <div id="story1-7"></div>
-        <div id="story1-8"></div>
-        <div id="story1-9"></div>
-        <div id="story1-10"></div>
-        <div id="story1-11"></div>
-        <div id="story1-12"></div>
-        <div id="story1-13"></div>
-        <div id="story1-14"></div>
-        <div id="story1-15"></div>
-        <div id="story1-16"></div>
-        <div id="story1-17"></div>
-        <div id="story1-18"></div>
-        <div id="story1-19"></div>
-        <div id="story1-20"></div>
-        <div id="story1-21"></div>
-        <div id="story1-22"></div>
-        <div id="story1-23"></div>
-        <div id="story1-24"></div>
-        <div id="story1-25"></div>
-        <div id="story1-26"></div>
-        <div id="story1-27"></div>
-        <div id="story1-28"></div>
-        <div id="story1-29"></div>
-        <div id="story1-30"></div>
-        <div id="story1-31"></div>
-        <div id="story1-32"></div>
-        <div id="story1-33"></div>
-        <div id="story1-34"></div>
-        <div id="story1-35"></div>
-        <div id="story1-36"></div>
-        <div id="story1-37"></div>
-        <div id="story1-38"></div>
-        <div id="story1-39"></div>
-        <div id="story1-40"></div>
-        <div id="story1-41"></div>
-        <div id="story1-42"></div>
-        <div id="story1-43"></div>
-        <div id="story1-44"></div>
-        <div id="story1-45"></div>
-        <div id="story1-46"></div>
-        <div id="story1-47"></div>
-        <div id="story1-48"></div>
-        <div id="story1-49"></div>
-        <div id="story1-50"></div>
-        <div id="story1-51"></div>
-        <div id="story1-52"></div>
-        <div id="story1-53"></div>
-        <div id="story1-54"></div>
-        <div id="story1-55"></div>
-        <div id="story1-56"></div>
-        <div id="story1-57"></div>
-        <div id="story1-58"></div>
-        <div id="story1-59"></div>
-        <div id="story1-60"></div>
-
-        <div id="end1"></div>
-        <div id="end1btn" onclick="story1end()"></div>
-
-  
-  
-        </div>
-
-        <div id="story2">
-
-            <div class="story2backhome" onclick="story2backhome()"></div>
-            <div class="story2backhomejudge">
-                <div   id="judge1-sure" onclick="story2backhome1()"></div>
-                <div   id="judge1-notsure" onclick="story2backhome2()"></div>
-                <div   id="backhoumejudegebg"></div>
-            </div>
-
-        <div class="nextbtn" id="story2-1-next" onclick="story2next1()"></div>
-        <div class="nextbtn" id="story2-2-next" onclick="story2next2()"></div>
-        <div class="nextbtn" id="story2-3-next" onclick="story2next3()"></div>
-        <div class="nextbtn" id="story2-4-next" onclick="story2next4()"></div>
-        <div class="nextbtn" id="story2-5-next" onclick="story2next5()"></div>
-        <div class="nextbtn" id="story2-6-next" onclick="story2next6()"></div>
-        <div class="nextbtn" id="story2-7-next" onclick="story2next7()"></div>
-        <div class="nextbtn" id="story2-8-next" onclick="story2next8()"></div>
-        <div class="nextbtn" id="story2-9-next" onclick="story2next9()"></div>
-        <div class="nextbtn" id="story2-10-next" onclick="story2next10()"></div>
-        <div class="nextbtn" id="story2-11-next" onclick="story2next11()"></div>
-        <div class="nextbtn" id="story2-12-next" onclick="story2next12()"></div>
-        <div class="nextbtn" id="story2-13-next" onclick="story2next13()"></div>
-        <div class="nextbtn" id="story2-14-next" onclick="story2next14()"></div>
-        <div class="nextbtn" id="story2-15-next" onclick="story2next15()"></div>
-        <div class="nextbtn" id="story2-16-next" onclick="story2next16()"></div>
-        <div class="nextbtn" id="story2-17-next" onclick="story2next17()"></div>
-        <div class="nextbtn" id="story2-18-next" onclick="story2next18()"></div>
-        <div class="nextbtn" id="story2-19-next" onclick="story2next19()"></div>
-        <div class="nextbtn" id="story2-20-next" onclick="story2next20()"></div>
-        <div class="nextbtn" id="story2-21-next" onclick="story2next21()"></div>
-        <div class="nextbtn" id="story2-22-next" onclick="story2next22()"></div>
-        <div class="nextbtn" id="story2-23-next" onclick="story2next23()"></div>
-        <div class="nextbtn" id="story2-24-next" onclick="story2next24()"></div>
-        <div class="nextbtn" id="story2-25-next" onclick="story2next25()"></div>
-        <div class="nextbtn" id="story2-26-next" onclick="story2next26()"></div>
-        <div class="nextbtn" id="story2-27-next" onclick="story2next27()"></div>
-        <div class="nextbtn" id="story2-28-next" onclick="story2next28()"></div>
-        <div class="nextbtn" id="story2-29-next" onclick="story2next29()"></div>
-        <div class="nextbtn" id="story2-30-next" onclick="story2next30()"></div>
-        <div class="nextbtn" id="story2-31-next" onclick="story2next31()"></div>
-        <div class="nextbtn" id="story2-32-next" onclick="story2next32()"></div>
-        <div class="nextbtn" id="story2-33-next" onclick="story2next33()"></div>
-        <div class="nextbtn" id="story2-34-next" onclick="story2next34()"></div>
-        <div class="nextbtn" id="story2-35-next" onclick="story2next35()"></div>
-        <div class="nextbtn" id="story2-36-next" onclick="story2next36()"></div>
-        <div class="nextbtn" id="story2-37-next" onclick="story2next37()"></div>
-        <div class="nextbtn" id="story2-38-next" onclick="story2next38()"></div>
-        <div class="nextbtn" id="story2-39-next" onclick="story2next39()"></div>
-        <div class="nextbtn" id="story2-40-next" onclick="story2next40()"></div>
-        <div class="nextbtn" id="story2-41-next" onclick="story2next41()"></div>
-        <div class="nextbtn" id="story2-42-next" onclick="story2next42()"></div>
-        <div class="nextbtn" id="story2-43-next" onclick="story2next43()"></div>
-        <div class="nextbtn" id="story2-44-next" onclick="story2next44()"></div>
-        <div class="nextbtn" id="story2-45-next" onclick="story2next45()"></div>
-        <div class="nextbtn" id="story2-46-next" onclick="story2next46()"></div>
-
-        <div id="story2-1"></div>
-        <div id="story2-2"></div>
-        <div id="story2-3"></div>
-        <div id="story2-4"></div>
-        <div id="story2-5"></div>
-        <div id="story2-6"></div>
-        <div id="story2-7"></div>
-        <div id="story2-8"></div>
-        <div id="story2-9"></div>
-        <div id="story2-10"></div>
-        <div id="story2-11"></div>
-        <div id="story2-12"></div>
-        <div id="story2-13"></div>
-        <div id="story2-14"></div>
-        <div id="story2-15"></div>
-        <div id="story2-16"></div>
-        <div id="story2-17"></div>
-        <div id="story2-18"></div>
-        <div id="story2-19"></div>
-        <div id="story2-20"></div>
-        <div id="story2-21"></div>
-        <div id="story2-22"></div>
-        <div id="story2-23"></div>
-        <div id="story2-24"></div>
-        <div id="story2-25"></div>
-        <div id="story2-26"></div>
-        <div id="story2-27"></div>
-        <div id="story2-28"></div>
-        <div id="story2-29"></div>
-        <div id="story2-30"></div>
-        <div id="story2-31"></div>
-        <div id="story2-32"></div>
-        <div id="story2-33"></div>
-        <div id="story2-34"></div>
-        <div id="story2-35"></div>
-        <div id="story2-36"></div>
-        <div id="story2-37"></div>
-        <div id="story2-38"></div>
-        <div id="story2-39"></div>
-        <div id="story2-40"></div>
-        <div id="story2-41"></div>
-        <div id="story2-42"></div>
-        <div id="story2-43"></div>
-        <div id="story2-44"></div>
-        <div id="story2-45"></div>
-        <div id="story2-46"></div>
-
-        <div id="end2"></div>
-        <div id="end2btn" onclick="story2end()"></div>
-
-        </div>
-
-        <div id="story3">
-
-            <div class="story3backhome" onclick="story3backhome()"></div>
-            <div class="story3backhomejudge">
-                <div   id="judge1-sure" onclick="story3backhome1()"></div>
-                <div   id="judge1-notsure" onclick="story3backhome2()"></div>
-                <div   id="backhoumejudegebg"></div>
-            </div>
-
-        <div class="nextbtn" id="story3-1-next" onclick="story3next1()"></div>
-        <div class="nextbtn" id="story3-2-next" onclick="story3next2()"></div>
-        <div class="nextbtn" id="story3-3-next" onclick="story3next3()"></div>
-        <div class="nextbtn" id="story3-4-next" onclick="story3next4()"></div>
-        <div class="nextbtn" id="story3-5-next" onclick="story3next5()"></div>
-        <div class="nextbtn" id="story3-6-next" onclick="story3next6()"></div>
-        <div class="nextbtn" id="story3-7-next" onclick="story3next7()"></div>
-        <div class="nextbtn" id="story3-8-next" onclick="story3next8()"></div>
-        <div class="nextbtn" id="story3-9-next" onclick="story3next9()"></div>
-        <div class="nextbtn" id="story3-10-next" onclick="story3next10()"></div>
-        <div class="nextbtn" id="story3-11-next" onclick="story3next11()"></div>
-        <div class="nextbtn" id="story3-12-next" onclick="story3next12()"></div>
-        <div class="nextbtn" id="story3-13-next" onclick="story3next13()"></div>
-        <div class="nextbtn" id="story3-14-next" onclick="story3next14()"></div>
-        <div class="nextbtn" id="story3-15-next" onclick="story3next15()"></div>
-        <div class="nextbtn" id="story3-16-next" onclick="story3next16()"></div>
-        <div class="nextbtn" id="story3-17-next" onclick="story3next17()"></div>
-        <div class="nextbtn" id="story3-18-next" onclick="story3next18()"></div>
-        <div class="nextbtn" id="story3-19-next" onclick="story3next19()"></div>
-        <div class="nextbtn" id="story3-20-next" onclick="story3next20()"></div>
-        <div class="nextbtn" id="story3-21-next" onclick="story3next21()"></div>
-        <div class="nextbtn" id="story3-22-next" onclick="story3next22()"></div>
-        <div class="nextbtn" id="story3-23-next" onclick="story3next23()"></div>
-        <div class="nextbtn" id="story3-24-next" onclick="story3next24()"></div>
-        <div class="nextbtn" id="story3-25-next" onclick="story3next25()"></div>
-        <div class="nextbtn" id="story3-26-next" onclick="story3next26()"></div>
-        <div class="nextbtn" id="story3-27-next" onclick="story3next27()"></div>
-        <div class="nextbtn" id="story3-28-next" onclick="story3next28()"></div>
-        <div class="nextbtn" id="story3-29-next" onclick="story3next29()"></div>
-        <div class="nextbtn" id="story3-30-next" onclick="story3next30()"></div>
-        <div class="nextbtn" id="story3-31-next" onclick="story3next31()"></div>
-        <div class="nextbtn" id="story3-32-next" onclick="story3next32()"></div>
-        <div class="nextbtn" id="story3-33-next" onclick="story3next33()"></div>
-        <div class="nextbtn" id="story3-34-next" onclick="story3next34()"></div>
-        <div class="nextbtn" id="story3-35-next" onclick="story3next35()"></div>
-        <div class="nextbtn" id="story3-36-next" onclick="story3next36()"></div>
-        <div class="nextbtn" id="story3-37-next" onclick="story3next37()"></div>
-        <div class="nextbtn" id="story3-38-next" onclick="story3next38()"></div>
-        <div class="nextbtn" id="story3-39-next" onclick="story3next39()"></div>
-        <div class="nextbtn" id="story3-40-next" onclick="story3next40()"></div>
-        <div class="nextbtn" id="story3-41-next" onclick="story3next41()"></div>
-
-        <div id="story3-1"></div>
-        <div id="story3-2"></div>
-        <div id="story3-3"></div>
-        <div id="story3-4"></div>
-        <div id="story3-5"></div>
-        <div id="story3-6"></div>
-        <div id="story3-7"></div>
-        <div id="story3-8"></div>
-        <div id="story3-9"></div>
-        <div id="story3-10"></div>
-        <div id="story3-11"></div>
-        <div id="story3-12"></div>
-        <div id="story3-13"></div>
-        <div id="story3-14"></div>
-        <div id="story3-15"></div>
-        <div id="story3-16"></div>
-        <div id="story3-17"></div>
-        <div id="story3-18"></div>
-        <div id="story3-19"></div>
-        <div id="story3-20"></div>
-        <div id="story3-21"></div>
-        <div id="story3-22"></div>
-        <div id="story3-23"></div>
-        <div id="story3-24"></div>
-        <div id="story3-25"></div>
-        <div id="story3-26"></div>
-        <div id="story3-27"></div>
-        <div id="story3-28"></div>
-        <div id="story3-29"></div>
-        <div id="story3-30"></div>
-        <div id="story3-31"></div>
-        <div id="story3-32"></div>
-        <div id="story3-33"></div>
-        <div id="story3-34"></div>
-        <div id="story3-35"></div>
-        <div id="story3-36"></div>
-        <div id="story3-37"></div>
-        <div id="story3-38"></div>
-        <div id="story3-39"></div>
-        <div id="story3-40"></div>
-        <div id="story3-41"></div>
-
-        <div id="end3"></div>
-        <div id="end3btn" onclick="story3end()"></div>
-        </div>
-
-        <div id="story4">
-
-            <div class="story4backhome" onclick="story4backhome()"></div>
-            <div class="story4backhomejudge">
-                <div   id="judge1-sure" onclick="story4backhome1()"></div>
-                <div   id="judge1-notsure" onclick="story4backhome2()"></div>
-                <div   id="backhoumejudegebg"></div>
-            </div>
-
-            <div class="nextbtn" id="story4-1-next" onclick="story4next1()"></div>
-            <div class="nextbtn" id="story4-2-next" onclick="story4next2()"></div>
-            <div class="nextbtn" id="story4-3-next" onclick="story4next3()"></div>
-            <div class="nextbtn" id="story4-4-next" onclick="story4next4()"></div>
-            <div class="nextbtn" id="story4-5-next" onclick="story4next5()"></div>
-            <div class="nextbtn" id="story4-6-next" onclick="story4next6()"></div>
-            <div class="nextbtn" id="story4-7-next" onclick="story4next7()"></div>
-            <div class="nextbtn" id="story4-8-next" onclick="story4next8()"></div>
-            <div class="nextbtn" id="story4-9-next" onclick="story4next9()"></div>
-            <div class="nextbtn" id="story4-10-next" onclick="story4next10()"></div>
-            <div class="nextbtn" id="story4-11-next" onclick="story4next11()"></div>
-            <div class="nextbtn" id="story4-12-next" onclick="story4next12()"></div>
-            <div class="nextbtn" id="story4-13-next" onclick="story4next13()"></div>
-            <div class="nextbtn" id="story4-14-next" onclick="story4next14()"></div>
-            <div class="nextbtn" id="story4-15-next" onclick="story4next15()"></div>
-            <div class="nextbtn" id="story4-16-next" onclick="story4next16()"></div>
-            <div class="nextbtn" id="story4-17-next" onclick="story4next17()"></div>
-            <div class="nextbtn" id="story4-18-next" onclick="story4next18()"></div>
-            <div class="nextbtn" id="story4-19-next" onclick="story4next19()"></div>
-            <div class="nextbtn" id="story4-20-next" onclick="story4next20()"></div>
-            <div class="nextbtn" id="story4-21-next" onclick="story4next21()"></div>
-            <div class="nextbtn" id="story4-22-next" onclick="story4next22()"></div>
-            <div class="nextbtn" id="story4-23-next" onclick="story4next23()"></div>
-            <div class="nextbtn" id="story4-24-next" onclick="story4next24()"></div>
-            <div class="nextbtn" id="story4-25-next" onclick="story4next25()"></div>
-            <div class="nextbtn" id="story4-26-next" onclick="story4next26()"></div>
-            <div class="nextbtn" id="story4-27-next" onclick="story4next27()"></div>
-            <div class="nextbtn" id="story4-28-next" onclick="story4next28()"></div>
-            <div class="nextbtn" id="story4-29-next" onclick="story4next29()"></div>
-            <div class="nextbtn" id="story4-30-next" onclick="story4next30()"></div>
-            <div class="nextbtn" id="story4-31-next" onclick="story4next31()"></div>
-            <div class="nextbtn" id="story4-32-next" onclick="story4next32()"></div>
-            <div class="nextbtn" id="story4-33-next" onclick="story4next33()"></div>
-            <div class="nextbtn" id="story4-34-next" onclick="story4next34()"></div>
-            <div class="nextbtn" id="story4-35-next" onclick="story4next35()"></div>
-            <div class="nextbtn" id="story4-36-next" onclick="story4next36()"></div>
-            <div class="nextbtn" id="story4-37-next" onclick="story4next37()"></div>
-            <div class="nextbtn" id="story4-38-next" onclick="story4next38()"></div>
-            <div class="nextbtn" id="story4-39-next" onclick="story4next39()"></div>
-            <div class="nextbtn" id="story4-40-next" onclick="story4next40()"></div>
-            <div class="nextbtn" id="story4-41-next" onclick="story4next41()"></div>
-            <div class="nextbtn" id="story4-42-next" onclick="story4next42()"></div>
-
-            <div id="story4-1"></div>
-            <div id="story4-2"></div>
-            <div id="story4-3"></div>
-            <div id="story4-4"></div>
-            <div id="story4-5"></div>
-            <div id="story4-6"></div>
-            <div id="story4-7"></div>
-            <div id="story4-8"></div>
-            <div id="story4-9"></div>
-            <div id="story4-10"></div>
-            <div id="story4-11"></div>
-            <div id="story4-12"></div>
-            <div id="story4-13"></div>
-            <div id="story4-14"></div>
-            <div id="story4-15"></div>
-            <div id="story4-16"></div>
-            <div id="story4-17"></div>
-
-            
-            <div id="story4-special">
-                <div id="songzhong" onclick="songzhong()"></div>
-                <div id="baosang" onclick="baosang()"></div>
-                <div id="zhaohun" onclick="zhaohun()"></div>
-                <div id="diaoyan" onclick="diaoyan()"></div>
-                <div id="rulian" onclick="rulian()"></div>
-                <div id="qiling" onclick="qiling()"></div>
-                <div id="songsang" onclick="songsang()"> </div>
-                <div id="xiazang" onclick="xiazang()"></div>
-                <div id="zuoqi" onclick="zuoqi()"></div>
-            </div>
-
-            <div id="story4-songzhong"></div>
-            <div id="story4-baosang"></div>
-            <div id="story4-zhaohun"></div>
-            <div id="story4-diaoyan"></div>
-            <div id="story4-rulian"></div>
-            <div id="story4-qiling"></div>
-            <div id="story4-songsang"></div>
-            <div id="story4-zuoqi"></div>
-            <div id="story4-xiazang"></div>
-
-            <div id="story4-18"></div>
-            <div id="story4-19"></div>
-            <div id="story4-20"></div>
-            <div id="story4-21"></div>
-            <div id="story4-22"></div>
-            <div id="story4-23"></div>
-            <div id="story4-24"></div>
-            <div id="story4-25"></div>
-            <div id="story4-26"></div>
-            <div id="story4-27"></div>
-            <div id="story4-28"></div>
-            <div id="story4-29"></div>
-            <div id="story4-30"></div>
-            <div id="story4-31"></div>
-            <div id="story4-32"></div>
-            <div id="story4-33"></div>
-            <div id="story4-34"></div>
-            <div id="story4-35"></div>
-            <div id="story4-36"></div>
-            <div id="story4-37"></div>
-            <div id="story4-38"></div>
-            <div id="story4-39"></div>
-            <div id="story4-40"></div>
-            <div id="story4-41"></div>
-            <div id="story4-42"></div>
-
-            <div id="end4"></div>
-            <div id="end4btn" onclick="story4end()"></div>
-        </div>
-
-        <div id="story5">
-
-            <div class="story5backhome" onclick="story5backhome()"></div>
-            <div class="story5backhomejudge">
-                <div   id="judge1-sure" onclick="story5backhome1()"></div>
-                <div   id="judge1-notsure" onclick="story5backhome2()"></div>
-                <div   id="backhoumejudegebg"></div>
-           () </div>
-                <div class="nextbtn" id="story5-1-next" onclick="story5next1()"></div>
-                <div class="nextbtn" id="story5-2-next" onclick="story5next2()"></div>
-                <div class="nextbtn" id="story5-3-next" onclick="story5next3()"></div>
-                <div class="nextbtn" id="story5-4-next" onclick="story5next4()"></div>
-                <div class="nextbtn" id="story5-5-next" onclick="story5next5()"></div>
-                <div class="nextbtn" id="story5-6-next" onclick="story5next6()"></div>
-                <div class="nextbtn" id="story5-7-next" onclick="story5next7()"></div>
-                <div class="nextbtn" id="story5-8-next" onclick="story5next8()"></div>
-                <div class="nextbtn" id="story5-9-next" onclick="story5next9()"></div>
-                <div class="nextbtn" id="story5-10-next" onclick="story5next10()"></div>
-                <div class="nextbtn" id="story5-11-next" onclick="story5next11()"></div>
-                <div class="nextbtn" id="story5-12-next" onclick="story5next12()"></div>
-                <div class="nextbtn" id="story5-13-next" onclick="story5next13()"></div>
-                <div class="nextbtn" id="story5-14-next" onclick="story5next14()"></div>
-                <div class="nextbtn" id="story5-15-next" onclick="story5next15()"></div>
-                <div class="nextbtn" id="story5-16-next" onclick="story5next16()"></div>
-                <div class="nextbtn" id="story5-17-next" onclick="story5next17()"></div>
-                <div class="nextbtn" id="story5-18-next" onclick="story5next18()"></div>
-                <div class="nextbtn" id="story5-19-next" onclick="story5next19()"></div>
-                <div class="nextbtn" id="story5-20-next" onclick="story5next20()"></div>
-                <div class="nextbtn" id="story5-21-next" onclick="story5next21()"></div>
-                <div class="nextbtn" id="story5-22-next" onclick="story5next22()"></div>
-                <div class="nextbtn" id="story5-23-next" onclick="story5next23()"></div>
-                <div class="nextbtn" id="story5-24-next" onclick="story5next24()"></div>
-                <div class="nextbtn" id="story5-25-next" onclick="story5next25()"></div>
-                <div class="nextbtn" id="story5-26-next" onclick="story5next26()"></div>
-                <div class="nextbtn" id="story5-27-next" onclick="story5next27()"></div>
-                <div class="nextbtn" id="story5-28-next" onclick="story5next28()"></div>
-                <div class="nextbtn" id="story5-29-next" onclick="story5next29()"></div>
-                <div class="nextbtn" id="story5-30-next" onclick="story5next30()"></div>
-                <div class="nextbtn" id="story5-31-next" onclick="story5next31()"></div>
-                <div class="nextbtn" id="story5-32-next" onclick="story5next32()"></div>
-                <div class="nextbtn" id="story5-33-next" onclick="story5next33()"></div>
-                <div class="nextbtn" id="story5-34-next" onclick="story5next34()"></div>
-                <div class="nextbtn" id="story5-35-next" onclick="story5next35()"></div>
-                <div class="nextbtn" id="story5-36-next" onclick="story5next36()"></div>
-                <div class="nextbtn" id="story5-37-next" onclick="story5next37()"></div>
-                <div class="nextbtn" id="story5-38-next" onclick="story5next38()"></div>
-                <div class="nextbtn" id="story5-39-next" onclick="story5next39()"></div>
-                <div class="nextbtn" id="story5-40-next" onclick="story5next40()"></div>
-                <div class="nextbtn" id="story5-41-next" onclick="story5next41()"></div>
-                <div class="nextbtn" id="story5-42-next" onclick="story5next42()"></div>
-                <div class="nextbtn" id="story5-43-next" onclick="story5next43()"></div>
-                <div class="nextbtn" id="story5-44-next" onclick="story5next44()"></div>
-                <div class="nextbtn" id="story5-45-next" onclick="story5next45()"></div>
-                <div class="nextbtn" id="story5-46-next" onclick="story5next46()"></div>
-                <div class="nextbtn" id="story5-47-next" onclick="story5next47()"></div>
-                <div class="nextbtn" id="story5-48-next" onclick="story5next48()"></div>
-                <div class="nextbtn" id="story5-49-next" onclick="story5next49()"></div>
-                <div class="nextbtn" id="story5-50-next" onclick="story5next50()"></div>
-                <div class="nextbtn" id="story5-51-next" onclick="story5next51()"></div>
-                <div class="nextbtn" id="story5-52-next" onclick="story5next52()"></div>
-                        
-                <div id="story5-1"></div>
-                <div id="story5-2"></div>
-                <div id="story5-3"></div>
-                <div id="story5-4"></div>
-                <div id="story5-5"></div>
-                <div id="story5-6"></div>
-                <div id="story5-7"></div>
-                <div id="story5-8"></div>
-                <div id="story5-9"></div>
-                <div id="story5-10"></div>
-                <div id="story5-11"></div>
-                <div id="story5-12"></div>
-                <div id="story5-13"></div>
-                <div id="story5-14"></div>
-                <div id="story5-15"></div>
-                <div id="story5-16"></div>
-                <div id="story5-17"></div>
-                <div id="story5-18"></div>
-                <div id="story5-19"></div>
-                <div id="story5-20"></div>
-                <div id="story5-21"></div>
-                <div id="story5-22"></div>
-                <div id="story5-23"></div>
-                <div id="story5-24"></div>
-                <div id="story5-25"></div>
-                <div id="story5-26"></div>
-                <div id="story5-27"></div>
-                <div id="story5-28"></div>
-                <div id="story5-29"></div>
-                <div id="story5-30"></div>
-                <div id="story5-31"></div>
-                <div id="story5-32"></div>
-                <div id="story5-33"></div>
-                <div id="story5-34"></div>
-                <div id="story5-35"></div>
-                <div id="story5-36"></div>
-                <div id="story5-37"></div>
-                <div id="story5-38"></div>
-                <div id="story5-39"></div>
-                <div id="story5-40"></div>
-                <div id="story5-41"></div>
-                <div id="story5-42"></div>
-                <div id="story5-43"></div>
-                <div id="story5-44"></div>
-                <div id="story5-45"></div>
-                <div id="story5-46"></div>
-                <div id="story5-47"></div>
-                <div id="story5-48"></div>
-                <div id="story5-49"></div>
-                <div id="story5-50"></div>
-                <div id="story5-51"></div>
-                <div id="story5-52"></div>
-
-                <div id="end5"></div>
-                <div id="end5btn" onclick="story5end()"></div>
+        <div class="main xunfangtu" onclick="tanxunfangtu()"></div>
+        <div class="main bg"></div>
         
+    </div>
+
+    <!-- 寻访图 --> 
+    <div class="map">
+
+        <div id="renwunot">
+            <div id="renwunotbg"></div>
+            <div id="renwunotbtn" onclick="renwunotoff()"></div>
         </div>
 
-        <div id="story6">
+            <div id="lock2" onclick="renwunoton()"></div>
+            <div id="lock3" onclick="renwunoton()"></div>
+            <div id="lock4" onclick="renwunoton()"></div>
+            <div id="lock5" onclick="renwunoton()"></div>
+            <div id="lock6" onclick="renwunoton()"></div>
+            <div id="lock7" onclick="renwunoton()"></div>
+            <div id="lock8" onclick="renwunoton()"></div>
 
-            <div class="story6backhome" onclick="story6backhome()"></div>
-            <div class="story6backhomejudge">
-                <div   id="judge1-sure" onclick="story6backhome1()"></div>
-                <div   id="judge1-notsure" onclick="story6backhome2()"></div>
-                <div   id="backhoumejudegebg"></div>
-            </div>
+        <div id="renwushu"></div>
+        <div id="yinyangling"></div>
+        <div id="shengmingyin"></div>
 
-            <div class="nextbtn" id="story6-1-next" onclick="story6next1()"></div>
-            <div class="nextbtn" id="story6-2-next" onclick="story6next2()"></div>
-            <div class="nextbtn" id="story6-3-next" onclick="story6next3()"></div>
-            <div class="nextbtn" id="story6-4-next" onclick="story6next4()"></div>
-            <div class="nextbtn" id="story6-5-next" onclick="story6next5()"></div>
-            <div class="nextbtn" id="story6-6-next" onclick="story6next6()"></div>
-            <div class="nextbtn" id="story6-7-next" onclick="story6next7()"></div>
-            <div class="nextbtn" id="story6-8-next" onclick="story6next8()"></div>
-            <div class="nextbtn" id="story6-9-next" onclick="story6next9()"></div>
-            <div class="nextbtn" id="story6-10-next" onclick="story6next10()"></div>
-            <div class="nextbtn" id="story6-11-next" onclick="story6next11()"></div>
-            <div class="nextbtn" id="story6-12-next" onclick="story6next12()"></div>
-            <div class="nextbtn" id="story6-13-next" onclick="story6next13()"></div>
-            <div class="nextbtn" id="story6-14-next" onclick="story6next14()"></div>
-            <div class="nextbtn" id="story6-15-next" onclick="story6next15()"></div>
-            <div class="nextbtn" id="story6-16-next" onclick="story6next16()"></div>
-            <div class="nextbtn" id="story6-17-next" onclick="story6next17()"></div>
-            <div class="nextbtn" id="story6-18-next" onclick="story6next18()"></div>
-            <div class="nextbtn" id="story6-19-next" onclick="story6next19()"></div>
-            <div class="nextbtn" id="story6-20-next" onclick="story6next20()"></div>
-            <div class="nextbtn" id="story6-21-next" onclick="story6next21()"></div>
-            <div class="nextbtn" id="story6-22-next" onclick="story6next22()"></div>
-            <div class="nextbtn" id="story6-23-next" onclick="story6next23()"></div>
-            <div class="nextbtn" id="story6-24-next" onclick="story6next24()"></div>
-            <div class="nextbtn" id="story6-25-next" onclick="story6next25()"></div>
-            <div class="nextbtn" id="story6-26-next" onclick="story6next26()"></div>
-            <div class="nextbtn" id="story6-27-next" onclick="story6next27()"></div>
-            <div class="nextbtn" id="story6-28-next" onclick="story6next28()"></div>
-            <div class="nextbtn" id="story6-29-next" onclick="story6next29()"></div>
-            <div class="nextbtn" id="story6-30-next" onclick="story6next30()"></div>
-            <div class="nextbtn" id="story6-31-next" onclick="story6next31()"></div>
-            <div class="nextbtn" id="story6-32-next" onclick="story6next32()"></div>
-            <div class="nextbtn" id="story6-33-next" onclick="story6next33()"></div>
-            <div class="nextbtn" id="story6-34-next" onclick="story6next34()"></div>
-            <div class="nextbtn" id="story6-35-next" onclick="story6next35()"></div>
-            <div class="nextbtn" id="story6-36-next" onclick="story6next36()"></div>
-            <div class="nextbtn" id="story6-37-next" onclick="story6next37()"></div>
-            <div class="nextbtn" id="story6-38-next" onclick="story6next38()"></div>
-            <div class="nextbtn" id="story6-39-next" onclick="story6next39()"></div>
-            <div class="nextbtn" id="story6-40-next" onclick="story6next40()"></div>
-            <div class="nextbtn" id="story6-41-next" onclick="story6next41()"></div>
-            
-            <div id="story6-1"></div>
-            <div id="story6-2"></div>
-            <div id="story6-3"></div>
-            <div id="story6-4"></div>
-            <div id="story6-5"></div>
-            <div id="story6-6"></div>
-            <div id="story6-7"></div>
-            <div id="story6-8"></div>
-            <div id="story6-9"></div>
-            <div id="story6-10"></div>
-            <div id="story6-11"></div>
-            <div id="story6-12"></div>
-            <div id="story6-13"></div>
-            <div id="story6-14"></div>
-            <div id="story6-15"></div>
-            <div id="story6-16"></div>
-            <div id="story6-17"></div>
-            <div id="story6-18"></div>
-            <div id="story6-19"></div>
-            <div id="story6-20"></div>
-            <div id="story6-21"></div>
-            <div id="story6-22"></div>
-            <div id="story6-23"></div>
-            <div id="story6-24"></div>
-            <div id="story6-25"></div>
-            <div id="story6-26"></div>
-            <div id="story6-27"></div>
-            <div id="story6-28"></div>
-            <div id="story6-29"></div>
-            <div id="story6-30"></div>
-            <div id="story6-31"></div>
-            <div id="story6-32"></div>
-            <div id="story6-33"></div>
-            <div id="story6-34"></div>
-            <div id="story6-35"></div>
-            <div id="story6-36"></div>
-            <div id="story6-37"></div>
-            <div id="story6-38"></div>
-            <div id="story6-39"></div>
-            <div id="story6-40"></div>
-            <div id="story6-41"></div>
-           
+        <div id="huode"></div>
+        <div id="wancheng"></div>
 
-            <div id="story6-special">
-                <div id="qin" onclick="qin()"></div>
-                <div id="shouyi" onclick="shouyi()"></div>
-                <div id="shouxie" onclick="shouxie()"></div>
-                <div id="shoumao" onclick="shoumao()"></div>
-                <div id="shoubei" onclick="shoubei()"></div>
-            </div>
+        <div   class="icon" id="a1" onclick="a1()"></div>
+            <div class="icon-word" id="a1w"></div>
+        <div class="choice-main" id="choice-main1">
+            <div class="choice" id="choice-a1-play" onclick="a1start()"></div>
+            <div class="choice" id="choice-a1-replay" onclick="a1restart()"></div>
+            <div id="choice-a1-bg"></div>
+        </div>
 
-            <div id="story6-qin"></div>
-            <div id="story6-shouyi"></div>
-            <div id="story6-shouxie"></div>
-            <div id="story6-shoumao"></div>
-            <div id="story6-shoubei"></div>
+
+
+        <div   class="icon" id="a2" onclick="a2()"></div>
+            <div class="icon-word" id="a2w"></div>
+            <div class="choice-main" id="choice-main2">
+            <div class="choice" id="choice-a2-play" onclick="a2start()"></div>
+            <div class="choice" id="choice-a2-replay" onclick="a2restart()"></div>
+            <div id="choice-a2-bg"></div>
+        </div>
+
+
+
+        <div   class="icon" id="a3" onclick="a3()"></div>
+            <div class="icon-word" id="a3w"></div>
+            <div class="choice-main" id="choice-main3">
+            <div class="choice" id="choice-a3-play" onclick="a3start()"></div>
+            <div class="choice" id="choice-a3-replay" onclick="a3restart()"></div>
+            <div id="choice-a3-bg"></div>
+        </div>
+        
+
+        <div   class="icon" id="a4" onclick="a4()"></div>
+            <div class="icon-word" id="a4w"></div>
+            <div class="choice-main" id="choice-main4">
+            <div class="choice" id="choice-a4-play" onclick="a4start()"></div>
+            <div class="choice" id="choice-a4-replay" onclick="a4restart()"></div>
+            <div id="choice-a4-bg"></div>
+        </div>
+        
+        <div   class="icon" id="a5" onclick="a5()"></div>
+            <div class="icon-word" id="a5w"></div>
+            <div class="choice-main" id="choice-main5">
+            <div class="choice" id="choice-a5-play" onclick="a5start()"></div>
+            <div class="choice" id="choice-a5-replay" onclick="a5restart()"></div>
+            <div id="choice-a5-bg"></div>
+        </div>
+        
+
+        <div   class="icon" id="a6" onclick="a6()"></div>
+            <div class="icon-word" id="a6w"></div>
+            <div class="choice-main" id="choice-main6">
+            <div class= "choice" id="choice-a6-play" onclick="a6start()"></div>
+            <div class= "choice" id="choice-a6-replay" onclick="a6restart()"></div>
+            <div id="choice-a6-bg"></div>
+        </div>
+        
+
+        <div   class="icon" id="a7" onclick="a7()"></div>
+            <div class="icon-word" id="a7w"></div>
+            <div class="choice-main" id="choice-main7">
+            <div class= "choice" id="choice-a7-play" onclick="a7start()"></div>
+            <div class= "choice" id="choice-a7-replay" onclick="a7restart()"></div>
+            <div id="choice-a7-bg"></div>
+        </div>
 
         
-            <div id="story6-42"></div>
-            <div id="choose">
-                <div id="cloth1"></div>
-                <div id="cloth2"></div>
-                <div id="cloth3"></div>
-                <div id="cloth4"></div>
-                <div id="cloth1name"></div>
-                <div id="cloth2name"></div>
-                <div id="cloth3name"></div>
-                <div id="cloth4name"></div>
-                <div class="clothbtn" id="cloth1nextbtn" onclick="cloth1()"></div>
-                <div class="clothbtn" id="cloth2nextbtn" onclick="cloth2()"></div>
-                <div class="clothbtn" id="cloth3nextbtn" onclick="cloth3()"></div>
-                <div class="clothbtn" id="cloth4nextbtn" onclick="cloth4()"></div>
-                <div id="choosefinish" onclick="choosefinish()"></div>
-            </div>
-            
-            <div id="end6"></div>
-            <div id="defen"></div>
-            <div id="end6btn" onclick="story6end()"></div>
-
-
+        <div   class="icon" id="a8" onclick="a8()"></div>
+            <div class="icon-word" id="a8w"></div>
+            <div class="choice-main" id="choice-main8">
+            <div class= "choice" id="choice-a8-play" onclick="a8start()"></div>
+            <div class= "choice" id="choice-a8-replay" onclick="a8restart()"></div>
+            <div id="choice-a8-bg"></div>
         </div>
 
-        <div id="story7">
-        <div class="story7backhome" onclick="story7backhome()"></div>
-        <div class="story7backhomejudge">
-            <div   id="judge1-sure" onclick="story7backhome1()"></div>
-            <div   id="judge1-notsure" onclick="story7backhome2()"></div>
+
+            <div    id="judge1">
+                <div   id="judge1-sure" onclick="story1go()"></div>
+                <div   id="judge1-notsure" onclick="closejudge1()"></div>
+            </div>
+
+            <div    id="judge2">
+                <div   id="judge2-sure" onclick="story2go()"></div>
+                <div   id="judge2-notsure" onclick="closejudge2()"></div>
+            </div>
+            <div    id="judge3">
+                <div   id="judge3-sure" onclick="story3go()"></div>
+                <div   id="judge3-notsure" onclick="closejudge3()"></div>
+            </div>
+            <div    id="judge4">
+                <div   id="judge4-sure" onclick="story4go()"></div>
+                <div   id="judge4-notsure" onclick="closejudge4()"></div>
+            </div>
+            <div    id="judge5">
+                <div   id="judge5-sure" onclick="story5go()"></div>
+                <div   id="judge5-notsure" onclick="closejudge5()"></div>
+            </div>
+            <div    id="judge6">
+                <div   id="judge6-sure" onclick="story6go()"></div>
+                <div   id="judge6-notsure" onclick="closejudge6()"></div>
+            </div>
+            <div    id="judge7">
+                <div   id="judge7-sure" onclick="story7go()"></div>
+                <div   id="judge7-notsure" onclick="closejudge7()"></div>
+            </div>
+
+            <div    id="judge8">
+                <div   id="judge8-sure" onclick="story8go()"></div>
+                <div   id="judge8-notsure" onclick="closejudge8()"></div>
+            </div>
+    
+            <div id="yijingwancheng"></div>
+            <div id="yijingwanchengbtn" onclick="yijingwanchengbtn()"></div>
+
+            <div id="meiwancheng"></div>
+            <div id="meiwanchengbtn" onclick="meiwanchengbtn()"></div>
+
+        <div class="map bg"></div>
+        <div   class="map back2" onclick="tanback2()"></div>
+        <div   class="map ask2" onclick="tanask2()"></div>
+    </div>
+    
+    <!-- 情报站 --> 
+    <div id="qingbaozhanzong">
+        <div id="qingbaozhan1"></div>
+        <div id="qingbaozhan2"></div>
+
+        <div id="qingbaozhanback" onclick="qingbaozhanback()"></div>
+        
+        <div id="renwushu2"></div>
+        <div id="yinyangling2"></div>
+        <div id="shengmingyin2"></div>
+        <div id="tujian2"></div>
+    
+    </div>
+
+        <!-- 菜单说明 --> 
+    <div id="mainask">
+        <div id="mainaskbg"></div>
+        <div id="mainaskoff" onclick="mainaskoff()"></div>
+    </div>
+
+    <!-- 旧闻录-说明 --> 
+    <div id="jiuwenluask1">
+        <div id="jiuwenluask1bg"></div>
+        <div id="jiuwenluask1off" onclick="jiuwenluask1off()"></div>
+    </div>
+
+    <!-- 阴阳令牌不足 --> 
+    <div id="notget">
+        <div id="notgetbg"></div>
+        <div id="notgetbtn" onclick="notget()"></div>
+    </div>
+
+    <!-- 生命印记不足 --> 
+    <div id="notget2">
+        <div id="notgetbg2"></div>
+        <div id="notgetbtn2" onclick="notget2()"></div>
+    </div>
+
+    <!-- 旧闻录1 --> 
+    <div class="book">
+        <div class="book bg"></div>
+        <div class="book back3" onclick="tanback3()"></div>
+        <div class="book ask3" onclick="jiuwenluask1on()"></div>
+
+        <div class="book jin" onclick="jin()"></div> 
+        <div class="book mu" onclick="mu()"></div>   
+        <div class="book shui" onclick="shui()"></div>            
+        <div class="book huo" onclick="huo()"></div>
+        <div class="book tu" onclick="tu()"></div>
+
+        <div id="jiuwenlunext" onclick="jiuwenlunext()"></div>
+    </div>
+
+    <!-- 旧闻录2 --> 
+    <div class="book2">
+        <div class="book2 bg"></div>
+        <div class="book2 back3" onclick="tanback3()"></div>
+        <div class="book2 haitianzhixin" onclick="haitianzhixin()"></div> 
+        <div class="book2 shenghuazhihai" onclick="shenghuazhihai()"></div>   
+        <div class="book2 xinghuozhijing" onclick="xinghuozhijing()"></div>            
+        <div class="book2 juanyongzhiqu" onclick="juanyongzhiqu()"></div>
+        <div class="book2 miluozhige" onclick="miluozhige()"></div>
+        <div id="jiuwenluback" onclick="jiuwenluback()"></div>
+    </div>
+
+    <!-- 旧闻录1-内部 --> 
+    <div id="book-pre">
+        <div class="jin-1"></div>
+        <div class="jinback" onclick="jinback()"></div>
+        <div class="jin-2"></div>
+        <div class="jingo" onclick="jingo()"></div>
+
+        <div class="mu-1"></div>
+        <div class="muback" onclick="muback()"></div>
+        <div class="mu-2"></div>
+        <div class="mugo" onclick="mugo()"></div>
+
+        <div class="shui-1"></div>
+        <div class="shuiback" onclick="shuiback()"></div>
+        <div class="shui-2"></div>
+        <div class="shuigo" onclick="shuigo()"></div>
+
+        <div class="huo-1"></div>
+        <div class="huoback" onclick="huoback()"></div>
+        <div class="huo-2"></div>
+        <div class="huogo" onclick="huogo()"></div>
+
+        <div class="tu-1"></div>
+        <div class="tuback" onclick="tuback()"></div>
+        <div class="tu-2"></div>
+        <div class="tugo" onclick="tugo()"></div>
+    </div>
+
+    <!-- 旧闻录2-内部 --> 
+    <div id="book-pre2">
+        <div class="haitianzhixin-1"></div>
+        <div class="haitianzhixin-back" onclick="haitianzhixinback()"></div>
+        <div class="haitianzhixin-2"></div>
+        <div class="haitianzhixingo" onclick="haitianzhixingo()"></div>
+
+        <div class="shenghuazhihai-1"></div>
+        <div class="shenghuazhihai-back" onclick="shenghuazhihaiback()"></div>
+        <div class="shenghuazhihai-2"></div>
+        <div class="shenghuazhihaigo" onclick="shenghuazhihaigo()"></div>
+
+        <div class="xinghuozhijing-1"></div>
+        <div class="xinghuozhijing-back" onclick="xinghuozhijingback()"></div>
+        <div class="xinghuozhijing-2"></div>
+        <div class="xinghuozhijinggo" onclick="xinghuozhijinggo()"></div>
+
+        <div class="juanyongzhiqu-1"></div>
+        <div class="juanyongzhiqu-back" onclick="juanyongzhiquback()"></div>
+        <div class="juanyongzhiqu-2"></div>
+        <div class="juanyongzhiqugo" onclick="juanyongzhiqugo()"></div>
+
+        <div class="miluozhige-1"></div>
+        <div class="miluozhige-back" onclick="miluozhigeback()"></div>
+        <div class="miluozhige-2"></div>
+        <div class="miluozhigego" onclick="miluozhigego()"></div>
+    </div>
+
+    <!-- 故事 --> 
+    <div id="story1">
+        
+    <div class="story1backhome" onclick="story1backhome()"></div>
+    <div class="story1backhomejudge">
+        <div   id="judge1-sure" onclick="story1backhome1()"></div>
+        <div   id="judge1-notsure" onclick="story1backhome2()"></div>
+        <div   id="backhoumejudegebg"></div>
+    </div>
+    <div class="nextbtn" id="story1-0-next" onclick="story1next0()"></div>
+    <div class="nextbtn" id="story1-1-next" onclick="story1next1()"></div>
+    <div class="nextbtn" id="story1-2-next" onclick="story1next2()"></div>
+    <div class="nextbtn" id="story1-3-next" onclick="story1next3()"></div>
+    <div class="nextbtn" id="story1-4-next" onclick="story1next4()"></div>
+    <div class="nextbtn" id="story1-5-next" onclick="story1next5()"></div>
+    <div class="nextbtn" id="story1-6-next" onclick="story1next6()"></div>
+    <div class="nextbtn" id="story1-7-next" onclick="story1next7()"></div>
+    <div class="nextbtn" id="story1-8-next" onclick="story1next8()"></div>
+    <div class="nextbtn" id="story1-9-next" onclick="story1next9()"></div>
+    <div class="nextbtn" id="story1-10-next" onclick="story1next10()"></div>
+    <div class="nextbtn" id="story1-11-next" onclick="story1next11()"></div>
+    <div class="nextbtn" id="story1-12-next" onclick="story1next12()"></div>
+    <div class="nextbtn" id="story1-13-next" onclick="story1next13()"></div>
+    <div class="nextbtn" id="story1-14-next" onclick="story1next14()"></div>
+    <div class="nextbtn" id="story1-15-next" onclick="story1next15()"></div>
+    <div class="nextbtn" id="story1-16-next" onclick="story1next16()"></div>
+    <div class="nextbtn" id="story1-17-next" onclick="story1next17()"></div>
+    <div class="nextbtn" id="story1-18-next" onclick="story1next18()"></div>
+    <div class="nextbtn" id="story1-19-next" onclick="story1next19()"></div>
+    <div class="nextbtn" id="story1-20-next" onclick="story1next20()"></div>
+    <div class="nextbtn" id="story1-21-next" onclick="story1next21()"></div>
+    <div class="nextbtn" id="story1-22-next" onclick="story1next22()"></div>
+    <div class="nextbtn" id="story1-23-next" onclick="story1next23()"></div>
+    <div class="nextbtn" id="story1-24-next" onclick="story1next24()"></div>
+    <div class="nextbtn" id="story1-25-next" onclick="story1next25()"></div>
+    <div class="nextbtn" id="story1-26-next" onclick="story1next26()"></div>
+    <div class="nextbtn" id="story1-27-next" onclick="story1next27()"></div>
+    <div class="nextbtn" id="story1-28-next" onclick="story1next28()"></div>
+    <div class="nextbtn" id="story1-29-next" onclick="story1next29()"></div>
+    <div class="nextbtn" id="story1-30-next" onclick="story1next30()"></div>
+    <div class="nextbtn" id="story1-31-next" onclick="story1next31()"></div>
+    <div class="nextbtn" id="story1-32-next" onclick="story1next32()"></div>
+    <div class="nextbtn" id="story1-33-next" onclick="story1next33()"></div>
+    <div class="nextbtn" id="story1-34-next" onclick="story1next34()"></div>
+    <div class="nextbtn" id="story1-35-next" onclick="story1next35()"></div>
+    <div class="nextbtn" id="story1-36-next" onclick="story1next36()"></div>
+    <div class="nextbtn" id="story1-37-next" onclick="story1next37()"></div>
+    <div class="nextbtn" id="story1-38-next" onclick="story1next38()"></div>
+    <div class="nextbtn" id="story1-39-next" onclick="story1next39()"></div>
+    <div class="nextbtn" id="story1-40-next" onclick="story1next40()"></div>
+    <div class="nextbtn" id="story1-41-next" onclick="story1next41()"></div>
+    <div class="nextbtn" id="story1-42-next" onclick="story1next42()"></div>
+    <div class="nextbtn" id="story1-43-next" onclick="story1next43()"></div>
+    <div class="nextbtn" id="story1-44-next" onclick="story1next44()"></div>
+    <div class="nextbtn" id="story1-45-next" onclick="story1next45()"></div>
+    <div class="nextbtn" id="story1-46-next" onclick="story1next46()"></div>
+    <div class="nextbtn" id="story1-47-next" onclick="story1next47()"></div>
+    <div class="nextbtn" id="story1-48-next" onclick="story1next48()"></div>
+    <div class="nextbtn" id="story1-49-next" onclick="story1next49()"></div>
+    <div class="nextbtn" id="story1-50-next" onclick="story1next50()"></div>
+    <div class="nextbtn" id="story1-51-next" onclick="story1next51()"></div>
+    <div class="nextbtn" id="story1-52-next" onclick="story1next52()"></div>
+    <div class="nextbtn" id="story1-53-next" onclick="story1next53()"></div>
+    <div class="nextbtn" id="story1-54-next" onclick="story1next54()"></div>
+    <div class="nextbtn" id="story1-55-next" onclick="story1next55()"></div>
+    <div class="nextbtn" id="story1-56-next" onclick="story1next56()"></div>
+    <div class="nextbtn" id="story1-57-next" onclick="story1next57()"></div>
+    <div class="nextbtn" id="story1-58-next" onclick="story1next58()"></div>
+    <div class="nextbtn" id="story1-59-next" onclick="story1next59()"></div>
+    <div class="nextbtn" id="story1-60-next" onclick="story1next60()"></div>
+
+    <div id="story1-0"></div>
+    <div id="story1-1"></div>
+    <div id="story1-2"></div>
+    <div id="story1-3"></div>
+    <div id="story1-4"></div>
+    <div id="story1-5"></div>
+    <div id="story1-6"></div>
+    <div id="story1-7"></div>
+    <div id="story1-8"></div>
+    <div id="story1-9"></div>
+    <div id="story1-10"></div>
+    <div id="story1-11"></div>
+    <div id="story1-12"></div>
+    <div id="story1-13"></div>
+    <div id="story1-14"></div>
+    <div id="story1-15"></div>
+    <div id="story1-16"></div>
+    <div id="story1-17"></div>
+    <div id="story1-18"></div>
+    <div id="story1-19"></div>
+    <div id="story1-20"></div>
+    <div id="story1-21"></div>
+    <div id="story1-22"></div>
+    <div id="story1-23"></div>
+    <div id="story1-24"></div>
+    <div id="story1-25"></div>
+    <div id="story1-26"></div>
+    <div id="story1-27"></div>
+    <div id="story1-28"></div>
+    <div id="story1-29"></div>
+    <div id="story1-30"></div>
+    <div id="story1-31"></div>
+    <div id="story1-32"></div>
+    <div id="story1-33"></div>
+    <div id="story1-34"></div>
+    <div id="story1-35"></div>
+    <div id="story1-36"></div>
+    <div id="story1-37"></div>
+    <div id="story1-38"></div>
+    <div id="story1-39"></div>
+    <div id="story1-40"></div>
+    <div id="story1-41"></div>
+    <div id="story1-42"></div>
+    <div id="story1-43"></div>
+    <div id="story1-44"></div>
+    <div id="story1-45"></div>
+    <div id="story1-46"></div>
+    <div id="story1-47"></div>
+    <div id="story1-48"></div>
+    <div id="story1-49"></div>
+    <div id="story1-50"></div>
+    <div id="story1-51"></div>
+    <div id="story1-52"></div>
+    <div id="story1-53"></div>
+    <div id="story1-54"></div>
+    <div id="story1-55"></div>
+    <div id="story1-56"></div>
+    <div id="story1-57"></div>
+    <div id="story1-58"></div>
+    <div id="story1-59"></div>
+    <div id="story1-60"></div>
+
+    <div id="end1"></div>
+    <div id="end1btn" onclick="story1end()"></div>
+
+
+
+    </div>
+
+    <div id="story2">
+
+        <div class="story2backhome" onclick="story2backhome()"></div>
+        <div class="story2backhomejudge">
+            <div   id="judge1-sure" onclick="story2backhome1()"></div>
+            <div   id="judge1-notsure" onclick="story2backhome2()"></div>
             <div   id="backhoumejudegebg"></div>
         </div>
 
-            <div class="nextbtn" id="story7-1-next" onclick="story7next1()"></div>
-            <div class="nextbtn" id="story7-2-next" onclick="story7next2()"></div>
-            <div class="nextbtn" id="story7-3-next" onclick="story7next3()"></div>
-            <div class="nextbtn" id="story7-4-next" onclick="story7next4()"></div>
-            <div class="nextbtn" id="story7-5-next" onclick="story7next5()"></div>
-            <div class="nextbtn" id="story7-6-next" onclick="story7next6()"></div>
-            <div class="nextbtn" id="story7-7-next" onclick="story7next7()"></div>
-            <div class="nextbtn" id="story7-8-next" onclick="story7next8()"></div>
-            <div class="nextbtn" id="story7-9-next" onclick="story7next9()"></div>
-            <div class="nextbtn" id="story7-10-next" onclick="story7next10()"></div>
-            <div class="nextbtn" id="story7-11-next" onclick="story7next11()"></div>
-            <div class="nextbtn" id="story7-12-next" onclick="story7next12()"></div>
-            <div class="nextbtn" id="story7-13-next" onclick="story7next13()"></div>
-            <div class="nextbtn" id="story7-14-next" onclick="story7next14()"></div>
-            <div class="nextbtn" id="story7-15-next" onclick="story7next15()"></div>
-            <div class="nextbtn" id="story7-16-next" onclick="story7next16()"></div>
-            <div class="nextbtn" id="story7-17-next" onclick="story7next17()"></div>
-            <div class="nextbtn" id="story7-18-next" onclick="story7next18()"></div>
-            <div class="nextbtn" id="story7-19-next" onclick="story7next19()"></div>
-            <div class="nextbtn" id="story7-20-next" onclick="story7next20()"></div>
-            <div class="nextbtn" id="story7-21-next" onclick="story7next21()"></div>
-            <div class="nextbtn" id="story7-22-next" onclick="story7next22()"></div>
-            <div class="nextbtn" id="story7-23-next" onclick="story7next23()"></div>
-            <div class="nextbtn" id="story7-24-next" onclick="story7next24()"></div>
-            <div class="nextbtn" id="story7-25-next" onclick="story7next25()"></div>
-            <div class="nextbtn" id="story7-26-next" onclick="story7next26()"></div>
-            <div class="nextbtn" id="story7-27-next" onclick="story7next27()"></div>
-           
-            <div class="nextbtn" id="story7-29-next" onclick="story7next29()"></div>
-            <div class="nextbtn" id="story7-30-next" onclick="story7next30()"></div>
-            <div class="nextbtn" id="story7-31-next" onclick="story7next31()"></div>
-            <div class="nextbtn" id="story7-32-next" onclick="story7next32()"></div>
-            <div class="nextbtn" id="story7-33-next" onclick="story7next33()"></div>
-            <div class="nextbtn" id="story7-34-next" onclick="story7next34()"></div>
-            <div class="nextbtn" id="story7-35-next" onclick="story7next35()"></div>
-            <div class="nextbtn" id="story7-36-next" onclick="story7next36()"></div>
-            <div class="nextbtn" id="story7-37-next" onclick="story7next37()"></div>
-            <div class="nextbtn" id="story7nextcidai" onclick="story7nextcidai()"></div>
+    <div class="nextbtn" id="story2-1-next" onclick="story2next1()"></div>
+    <div class="nextbtn" id="story2-2-next" onclick="story2next2()"></div>
+    <div class="nextbtn" id="story2-3-next" onclick="story2next3()"></div>
+    <div class="nextbtn" id="story2-4-next" onclick="story2next4()"></div>
+    <div class="nextbtn" id="story2-5-next" onclick="story2next5()"></div>
+    <div class="nextbtn" id="story2-6-next" onclick="story2next6()"></div>
+    <div class="nextbtn" id="story2-7-next" onclick="story2next7()"></div>
+    <div class="nextbtn" id="story2-8-next" onclick="story2next8()"></div>
+    <div class="nextbtn" id="story2-9-next" onclick="story2next9()"></div>
+    <div class="nextbtn" id="story2-10-next" onclick="story2next10()"></div>
+    <div class="nextbtn" id="story2-11-next" onclick="story2next11()"></div>
+    <div class="nextbtn" id="story2-12-next" onclick="story2next12()"></div>
+    <div class="nextbtn" id="story2-13-next" onclick="story2next13()"></div>
+    <div class="nextbtn" id="story2-14-next" onclick="story2next14()"></div>
+    <div class="nextbtn" id="story2-15-next" onclick="story2next15()"></div>
+    <div class="nextbtn" id="story2-16-next" onclick="story2next16()"></div>
+    <div class="nextbtn" id="story2-17-next" onclick="story2next17()"></div>
+    <div class="nextbtn" id="story2-18-next" onclick="story2next18()"></div>
+    <div class="nextbtn" id="story2-19-next" onclick="story2next19()"></div>
+    <div class="nextbtn" id="story2-20-next" onclick="story2next20()"></div>
+    <div class="nextbtn" id="story2-21-next" onclick="story2next21()"></div>
+    <div class="nextbtn" id="story2-22-next" onclick="story2next22()"></div>
+    <div class="nextbtn" id="story2-23-next" onclick="story2next23()"></div>
+    <div class="nextbtn" id="story2-24-next" onclick="story2next24()"></div>
+    <div class="nextbtn" id="story2-25-next" onclick="story2next25()"></div>
+    <div class="nextbtn" id="story2-26-next" onclick="story2next26()"></div>
+    <div class="nextbtn" id="story2-27-next" onclick="story2next27()"></div>
+    <div class="nextbtn" id="story2-28-next" onclick="story2next28()"></div>
+    <div class="nextbtn" id="story2-29-next" onclick="story2next29()"></div>
+    <div class="nextbtn" id="story2-30-next" onclick="story2next30()"></div>
+    <div class="nextbtn" id="story2-31-next" onclick="story2next31()"></div>
+    <div class="nextbtn" id="story2-32-next" onclick="story2next32()"></div>
+    <div class="nextbtn" id="story2-33-next" onclick="story2next33()"></div>
+    <div class="nextbtn" id="story2-34-next" onclick="story2next34()"></div>
+    <div class="nextbtn" id="story2-35-next" onclick="story2next35()"></div>
+    <div class="nextbtn" id="story2-36-next" onclick="story2next36()"></div>
+    <div class="nextbtn" id="story2-37-next" onclick="story2next37()"></div>
+    <div class="nextbtn" id="story2-38-next" onclick="story2next38()"></div>
+    <div class="nextbtn" id="story2-39-next" onclick="story2next39()"></div>
+    <div class="nextbtn" id="story2-40-next" onclick="story2next40()"></div>
+    <div class="nextbtn" id="story2-41-next" onclick="story2next41()"></div>
+    <div class="nextbtn" id="story2-42-next" onclick="story2next42()"></div>
+    <div class="nextbtn" id="story2-43-next" onclick="story2next43()"></div>
+    <div class="nextbtn" id="story2-44-next" onclick="story2next44()"></div>
+    <div class="nextbtn" id="story2-45-next" onclick="story2next45()"></div>
+    <div class="nextbtn" id="story2-46-next" onclick="story2next46()"></div>
 
-            <div id="story7-1"></div>
-            <div id="story7-2"></div>
-            <div id="story7-3"></div>
-            <div id="story7-4"></div>
-            <div id="story7-5"></div>
-            <div id="story7-6"></div>
-            <div id="story7-7"></div>
-            <div id="story7-8"></div>
-            <div id="story7-9"></div>
-            <div id="story7-10"></div>
-            <div id="story7-11"></div>
-            <div id="story7-12"></div>
-            <div id="story7-13"></div>
-            <div id="story7-14"></div>
-            <div id="story7-15"></div>
-            <div id="story7-16"></div>
-            <div id="story7-17"></div>
-            <div id="story7-18"></div>
-            <div id="story7-19"></div>
-            <div id="story7-20"></div>
-            <div id="story7-21"></div>
-            <div id="story7-22"></div>
-            <div id="story7-23"></div>
-            <div id="story7-24"></div>
-            <div id="story7-25"></div>
-            <div id="story7-26"></div>
-            <div id="story7-27"></div>
+    <div id="story2-1"></div>
+    <div id="story2-2"></div>
+    <div id="story2-3"></div>
+    <div id="story2-4"></div>
+    <div id="story2-5"></div>
+    <div id="story2-6"></div>
+    <div id="story2-7"></div>
+    <div id="story2-8"></div>
+    <div id="story2-9"></div>
+    <div id="story2-10"></div>
+    <div id="story2-11"></div>
+    <div id="story2-12"></div>
+    <div id="story2-13"></div>
+    <div id="story2-14"></div>
+    <div id="story2-15"></div>
+    <div id="story2-16"></div>
+    <div id="story2-17"></div>
+    <div id="story2-18"></div>
+    <div id="story2-19"></div>
+    <div id="story2-20"></div>
+    <div id="story2-21"></div>
+    <div id="story2-22"></div>
+    <div id="story2-23"></div>
+    <div id="story2-24"></div>
+    <div id="story2-25"></div>
+    <div id="story2-26"></div>
+    <div id="story2-27"></div>
+    <div id="story2-28"></div>
+    <div id="story2-29"></div>
+    <div id="story2-30"></div>
+    <div id="story2-31"></div>
+    <div id="story2-32"></div>
+    <div id="story2-33"></div>
+    <div id="story2-34"></div>
+    <div id="story2-35"></div>
+    <div id="story2-36"></div>
+    <div id="story2-37"></div>
+    <div id="story2-38"></div>
+    <div id="story2-39"></div>
+    <div id="story2-40"></div>
+    <div id="story2-41"></div>
+    <div id="story2-42"></div>
+    <div id="story2-43"></div>
+    <div id="story2-44"></div>
+    <div id="story2-45"></div>
+    <div id="story2-46"></div>
 
-            <div id="story7-29"></div>
-            <div id="story7-30"></div>
-            <div id="story7-31"></div>
-            <div id="story7-32"></div>
-            <div id="story7-33"></div>
-            <div id="story7-34"></div>
-            <div id="story7-35"></div>
-            <div id="story7-36"></div>
-            <div id="story7-37"></div>
+    <div id="end2"></div>
+    <div id="end2btn" onclick="story2end()"></div>
 
-            <div id="story7-special">
-                <div id="bo" onclick="bo()"></div>
-                <div id="erhu" onclick="erhu()"></div>
-                <div id="luo" onclick="luo()"></div>
-                <div id="sheng" onclick="sheng()"></div>
-                <div id="suona" onclick="suona()"></div>
-                <div id="zhuangzhong" onclick="zhuangzhong()"></div>
-            </div>
+    </div>
 
-            <div id="story7-cidai">
-                <div id="cidai1" onclick="cidai1()"></div>
-                <div id="cidai2" onclick="cidai2()"></div>
-                <div id="cidai3" onclick="cidai3()"></div>
-                <div id="cidai4" onclick="cidai4()"></div>
-                <div id="cidaibg"></div>
-            </div>
+    <div id="story3">
 
-            <div id="story7-bo"></div>
-            <div id="story7-luo"></div>
-            <div id="story7-suona"></div>
-            <div id="story7-erhu"></div>
-            <div id="story7-sheng"></div>
-            <div id="story7-zhuangzhong"></div>
-
-            
-            <div id="end7"></div>
-            <div id="end7btn" onclick="story7end()"></div>
-
-        </div>
-
-        <div id="story8">
-            <div class="story8backhome" onclick="story8backhome()"></div>
-        <div class="story8backhomejudge">
-            <div   id="judge1-sure" onclick="story8backhome1()"></div>
-            <div   id="judge1-notsure" onclick="story8backhome2()"></div>
+        <div class="story3backhome" onclick="story3backhome()"></div>
+        <div class="story3backhomejudge">
+            <div   id="judge1-sure" onclick="story3backhome1()"></div>
+            <div   id="judge1-notsure" onclick="story3backhome2()"></div>
             <div   id="backhoumejudegebg"></div>
         </div>
-            <div id="story8-1"></div>
-            <div id="story8-2"></div>
-            <div id="story8-3"></div>
-            <div id="story8-4"></div>
-            <div id="story8-5"></div>
-            <div id="story8-6"></div>
-            <div id="story8-7"></div>
-            <div id="story8-8"></div>
-            <div id="story8-9"></div>
-            <div id="story8-10"></div>
-            <div id="story8-11"></div>
-            <div id="story8-12"></div>
-            <div id="story8-13"></div>
-            <div id="story8-14"></div>
-            <div id="story8-15"></div>
-            <div id="story8-16"></div>
-            <div id="story8-17"></div>
-            <div id="story8-18"></div>
-            <div id="story8-19"></div>
-            <div id="story8-20"></div>
-            <div id="story8-21"></div>
-            <div id="story8-22"></div>
-            <div id="story8-23"></div>
-            <div id="story8-24"></div>
-            <div id="story8-25"></div>
-            <div id="story8-26"></div>
-            <div id="story8-27"></div>
-            <div id="story8-28"></div>
-            <div id="story8-29"></div>
-            <div id="story8-30"></div>
-            <div id="story8-31"></div>
-            <div id="story8-32"></div>
-            <div id="story8-33"></div>
-            <div id="story8-34"></div>
-            <div id="story8-35"></div>
-            <div id="story8-36"></div>
-            <div id="story8-37"></div>
-            <div id="story8-38"></div>
-            <div id="story8-39"></div>
-            <div id="story8-40"></div>
-            <div id="story8-41"></div>
-            <div id="story8-42"></div>
-            <div id="story8-43"></div>
-            <div id="story8-44"></div>
-            <div id="story8-45"></div>
-            <div id="story8-46"></div>
-            <div id="story8-47"></div>
-            <div id="story8-48"></div>
-            <div id="story8-49"></div>
-            <div id="story8-50"></div>
-            <div id="story8-51"></div>
-            <div id="story8-52"></div>
-            <div id="story8-53"></div>
-            <div id="story8-54"></div>
-            <div id="story8-55"></div>
-            <div id="story8-56"></div>
-            <div id="story8-57"></div>
-            <div id="story8-58"></div>
-            <div id="story8-59"></div>
 
-            <div class="nextbtn" id="story8-1-next" onclick="story8next1()"></div>
-            <div class="nextbtn" id="story8-2-next" onclick="story8next2()"></div>
-            <div class="nextbtn" id="story8-3-next" onclick="story8next3()"></div>
-            <div class="nextbtn" id="story8-4-next" onclick="story8next4()"></div>
-            <div class="nextbtn" id="story8-5-next" onclick="story8next5()"></div>
-            <div class="nextbtn" id="story8-6-next" onclick="story8next6()"></div>
-            <div class="nextbtn" id="story8-7-next" onclick="story8next7()"></div>
-            <div class="nextbtn" id="story8-8-next" onclick="story8next8()"></div>
-            <div class="nextbtn" id="story8-9-next" onclick="story8next9()"></div>
-            <div class="nextbtn" id="story8-10-next" onclick="story8next10()"></div>
-            <div class="nextbtn" id="story8-11-next" onclick="story8next11()"></div>
-            <div class="nextbtn" id="story8-12-next" onclick="story8next12()"></div>
-            <div class="nextbtn" id="story8-13-next" onclick="story8next13()"></div>
-            <div class="nextbtn" id="story8-14-next" onclick="story8next14()"></div>
-            <div class="nextbtn" id="story8-15-next" onclick="story8next15()"></div>
-            <div class="nextbtn" id="story8-16-next" onclick="story8next16()"></div>
-            <div class="nextbtn" id="story8-17-next" onclick="story8next17()"></div>
-            <div class="nextbtn" id="story8-18-next" onclick="story8next18()"></div>
-            <div class="nextbtn" id="story8-19-next" onclick="story8next19()"></div>
-            <div class="nextbtn" id="story8-20-next" onclick="story8next20()"></div>
-            <div class="nextbtn" id="story8-21-next" onclick="story8next21()"></div>
-            <div class="nextbtn" id="story8-22-next" onclick="story8next22()"></div>
-            <div class="nextbtn" id="story8-23-next" onclick="story8next23()"></div>
-            <div class="nextbtn" id="story8-24-next" onclick="story8next24()"></div>
-            <div class="nextbtn" id="story8-25-next" onclick="story8next25()"></div>
-            <div class="nextbtn" id="story8-26-next" onclick="story8next26()"></div>
-            <div class="nextbtn" id="story8-27-next" onclick="story8next27()"></div>
-            <div class="nextbtn" id="story8-28-next" onclick="story8next28()"></div>
-            <div class="nextbtn" id="story8-29-next" onclick="story8next29()"></div>
-            <div class="nextbtn" id="story8-30-next" onclick="story8next30()"></div>
-            <div class="nextbtn" id="story8-31-next" onclick="story8next31()"></div>
-            <div class="nextbtn" id="story8-32-next" onclick="story8next32()"></div>
-            <div class="nextbtn" id="story8-33-next" onclick="story8next33()"></div>
-            <div class="nextbtn" id="story8-34-next" onclick="story8next34()"></div>
-            <div class="nextbtn" id="story8-35-next" onclick="story8next35()"></div>
-            <div class="nextbtn" id="story8-36-next" onclick="story8next36()"></div>
-            <div class="nextbtn" id="story8-37-next" onclick="story8next37()"></div>
-            <div class="nextbtn" id="story8-38-next" onclick="story8next38()"></div>
-            <div class="nextbtn" id="story8-39-next" onclick="story8next39()"></div>
-            <div class="nextbtn" id="story8-40-next" onclick="story8next40()"></div>
-            <div class="nextbtn" id="story8-41-next" onclick="story8next41()"></div>
-            <div class="nextbtn" id="story8-42-next" onclick="story8next42()"></div>
-            <div class="nextbtn" id="story8-43-next" onclick="story8next43()"></div>
-            <div class="nextbtn" id="story8-44-next" onclick="story8next44()"></div>
-            <div class="nextbtn" id="story8-45-next" onclick="story8next45()"></div>
-            <div class="nextbtn" id="story8-46-next" onclick="story8next46()"></div>
-            <div class="nextbtn" id="story8-47-next" onclick="story8next47()"></div>
-            <div class="nextbtn" id="story8-48-next" onclick="story8next48()"></div>
-            <div class="nextbtn" id="story8-49-next" onclick="story8next49()"></div>
-            <div class="nextbtn" id="story8-50-next" onclick="story8next50()"></div>
-            <div class="nextbtn" id="story8-51-next" onclick="story8next51()"></div>
-            <div class="nextbtn" id="story8-52-next" onclick="story8next52()"></div>
-            <div class="nextbtn" id="story8-53-next" onclick="story8next53()"></div>
-            <div class="nextbtn" id="story8-54-next" onclick="story8next54()"></div>
-            <div class="nextbtn" id="story8-55-next" onclick="story8next55()"></div>
-            <div class="nextbtn" id="story8-56-next" onclick="story8next56()"></div>
-            <div class="nextbtn" id="story8-57-next" onclick="story8next57()"></div>
-            <div class="nextbtn" id="story8-58-next" onclick="story8next58()"></div>
-            <div class="nextbtn" id="story8-59-next" onclick="story8next59()"></div>
+    <div class="nextbtn" id="story3-1-next" onclick="story3next1()"></div>
+    <div class="nextbtn" id="story3-2-next" onclick="story3next2()"></div>
+    <div class="nextbtn" id="story3-3-next" onclick="story3next3()"></div>
+    <div class="nextbtn" id="story3-4-next" onclick="story3next4()"></div>
+    <div class="nextbtn" id="story3-5-next" onclick="story3next5()"></div>
+    <div class="nextbtn" id="story3-6-next" onclick="story3next6()"></div>
+    <div class="nextbtn" id="story3-7-next" onclick="story3next7()"></div>
+    <div class="nextbtn" id="story3-8-next" onclick="story3next8()"></div>
+    <div class="nextbtn" id="story3-9-next" onclick="story3next9()"></div>
+    <div class="nextbtn" id="story3-10-next" onclick="story3next10()"></div>
+    <div class="nextbtn" id="story3-11-next" onclick="story3next11()"></div>
+    <div class="nextbtn" id="story3-12-next" onclick="story3next12()"></div>
+    <div class="nextbtn" id="story3-13-next" onclick="story3next13()"></div>
+    <div class="nextbtn" id="story3-14-next" onclick="story3next14()"></div>
+    <div class="nextbtn" id="story3-15-next" onclick="story3next15()"></div>
+    <div class="nextbtn" id="story3-16-next" onclick="story3next16()"></div>
+    <div class="nextbtn" id="story3-17-next" onclick="story3next17()"></div>
+    <div class="nextbtn" id="story3-18-next" onclick="story3next18()"></div>
+    <div class="nextbtn" id="story3-19-next" onclick="story3next19()"></div>
+    <div class="nextbtn" id="story3-20-next" onclick="story3next20()"></div>
+    <div class="nextbtn" id="story3-21-next" onclick="story3next21()"></div>
+    <div class="nextbtn" id="story3-22-next" onclick="story3next22()"></div>
+    <div class="nextbtn" id="story3-23-next" onclick="story3next23()"></div>
+    <div class="nextbtn" id="story3-24-next" onclick="story3next24()"></div>
+    <div class="nextbtn" id="story3-25-next" onclick="story3next25()"></div>
+    <div class="nextbtn" id="story3-26-next" onclick="story3next26()"></div>
+    <div class="nextbtn" id="story3-27-next" onclick="story3next27()"></div>
+    <div class="nextbtn" id="story3-28-next" onclick="story3next28()"></div>
+    <div class="nextbtn" id="story3-29-next" onclick="story3next29()"></div>
+    <div class="nextbtn" id="story3-30-next" onclick="story3next30()"></div>
+    <div class="nextbtn" id="story3-31-next" onclick="story3next31()"></div>
+    <div class="nextbtn" id="story3-32-next" onclick="story3next32()"></div>
+    <div class="nextbtn" id="story3-33-next" onclick="story3next33()"></div>
+    <div class="nextbtn" id="story3-34-next" onclick="story3next34()"></div>
+    <div class="nextbtn" id="story3-35-next" onclick="story3next35()"></div>
+    <div class="nextbtn" id="story3-36-next" onclick="story3next36()"></div>
+    <div class="nextbtn" id="story3-37-next" onclick="story3next37()"></div>
+    <div class="nextbtn" id="story3-38-next" onclick="story3next38()"></div>
+    <div class="nextbtn" id="story3-39-next" onclick="story3next39()"></div>
+    <div class="nextbtn" id="story3-40-next" onclick="story3next40()"></div>
+    <div class="nextbtn" id="story3-41-next" onclick="story3next41()"></div>
+
+    <div id="story3-1"></div>
+    <div id="story3-2"></div>
+    <div id="story3-3"></div>
+    <div id="story3-4"></div>
+    <div id="story3-5"></div>
+    <div id="story3-6"></div>
+    <div id="story3-7"></div>
+    <div id="story3-8"></div>
+    <div id="story3-9"></div>
+    <div id="story3-10"></div>
+    <div id="story3-11"></div>
+    <div id="story3-12"></div>
+    <div id="story3-13"></div>
+    <div id="story3-14"></div>
+    <div id="story3-15"></div>
+    <div id="story3-16"></div>
+    <div id="story3-17"></div>
+    <div id="story3-18"></div>
+    <div id="story3-19"></div>
+    <div id="story3-20"></div>
+    <div id="story3-21"></div>
+    <div id="story3-22"></div>
+    <div id="story3-23"></div>
+    <div id="story3-24"></div>
+    <div id="story3-25"></div>
+    <div id="story3-26"></div>
+    <div id="story3-27"></div>
+    <div id="story3-28"></div>
+    <div id="story3-29"></div>
+    <div id="story3-30"></div>
+    <div id="story3-31"></div>
+    <div id="story3-32"></div>
+    <div id="story3-33"></div>
+    <div id="story3-34"></div>
+    <div id="story3-35"></div>
+    <div id="story3-36"></div>
+    <div id="story3-37"></div>
+    <div id="story3-38"></div>
+    <div id="story3-39"></div>
+    <div id="story3-40"></div>
+    <div id="story3-41"></div>
+
+    <div id="end3"></div>
+    <div id="end3btn" onclick="story3end()"></div>
+    </div>
+
+    <div id="story4">
+
+        <div class="story4backhome" onclick="story4backhome()"></div>
+        <div class="story4backhomejudge">
+            <div   id="judge1-sure" onclick="story4backhome1()"></div>
+            <div   id="judge1-notsure" onclick="story4backhome2()"></div>
+            <div   id="backhoumejudegebg"></div>
+        </div>
+
+        <div class="nextbtn" id="story4-1-next" onclick="story4next1()"></div>
+        <div class="nextbtn" id="story4-2-next" onclick="story4next2()"></div>
+        <div class="nextbtn" id="story4-3-next" onclick="story4next3()"></div>
+        <div class="nextbtn" id="story4-4-next" onclick="story4next4()"></div>
+        <div class="nextbtn" id="story4-5-next" onclick="story4next5()"></div>
+        <div class="nextbtn" id="story4-6-next" onclick="story4next6()"></div>
+        <div class="nextbtn" id="story4-7-next" onclick="story4next7()"></div>
+        <div class="nextbtn" id="story4-8-next" onclick="story4next8()"></div>
+        <div class="nextbtn" id="story4-9-next" onclick="story4next9()"></div>
+        <div class="nextbtn" id="story4-10-next" onclick="story4next10()"></div>
+        <div class="nextbtn" id="story4-11-next" onclick="story4next11()"></div>
+        <div class="nextbtn" id="story4-12-next" onclick="story4next12()"></div>
+        <div class="nextbtn" id="story4-13-next" onclick="story4next13()"></div>
+        <div class="nextbtn" id="story4-14-next" onclick="story4next14()"></div>
+        <div class="nextbtn" id="story4-15-next" onclick="story4next15()"></div>
+        <div class="nextbtn" id="story4-16-next" onclick="story4next16()"></div>
+        <div class="nextbtn" id="story4-17-next" onclick="story4next17()"></div>
+        <div class="nextbtn" id="story4-18-next" onclick="story4next18()"></div>
+        <div class="nextbtn" id="story4-19-next" onclick="story4next19()"></div>
+        <div class="nextbtn" id="story4-20-next" onclick="story4next20()"></div>
+        <div class="nextbtn" id="story4-21-next" onclick="story4next21()"></div>
+        <div class="nextbtn" id="story4-22-next" onclick="story4next22()"></div>
+        <div class="nextbtn" id="story4-23-next" onclick="story4next23()"></div>
+        <div class="nextbtn" id="story4-24-next" onclick="story4next24()"></div>
+        <div class="nextbtn" id="story4-25-next" onclick="story4next25()"></div>
+        <div class="nextbtn" id="story4-26-next" onclick="story4next26()"></div>
+        <div class="nextbtn" id="story4-27-next" onclick="story4next27()"></div>
+        <div class="nextbtn" id="story4-28-next" onclick="story4next28()"></div>
+        <div class="nextbtn" id="story4-29-next" onclick="story4next29()"></div>
+        <div class="nextbtn" id="story4-30-next" onclick="story4next30()"></div>
+        <div class="nextbtn" id="story4-31-next" onclick="story4next31()"></div>
+        <div class="nextbtn" id="story4-32-next" onclick="story4next32()"></div>
+        <div class="nextbtn" id="story4-33-next" onclick="story4next33()"></div>
+        <div class="nextbtn" id="story4-34-next" onclick="story4next34()"></div>
+        <div class="nextbtn" id="story4-35-next" onclick="story4next35()"></div>
+        <div class="nextbtn" id="story4-36-next" onclick="story4next36()"></div>
+        <div class="nextbtn" id="story4-37-next" onclick="story4next37()"></div>
+        <div class="nextbtn" id="story4-38-next" onclick="story4next38()"></div>
+        <div class="nextbtn" id="story4-39-next" onclick="story4next39()"></div>
+        <div class="nextbtn" id="story4-40-next" onclick="story4next40()"></div>
+        <div class="nextbtn" id="story4-41-next" onclick="story4next41()"></div>
+        <div class="nextbtn" id="story4-42-next" onclick="story4next42()"></div>
+
+        <div id="story4-1"></div>
+        <div id="story4-2"></div>
+        <div id="story4-3"></div>
+        <div id="story4-4"></div>
+        <div id="story4-5"></div>
+        <div id="story4-6"></div>
+        <div id="story4-7"></div>
+        <div id="story4-8"></div>
+        <div id="story4-9"></div>
+        <div id="story4-10"></div>
+        <div id="story4-11"></div>
+        <div id="story4-12"></div>
+        <div id="story4-13"></div>
+        <div id="story4-14"></div>
+        <div id="story4-15"></div>
+        <div id="story4-16"></div>
+        <div id="story4-17"></div>
+
         
-            <div id="end8"></div>
-            <div id="end8btn" onclick="story8end()"></div>
+        <div id="story4-special">
+            <div id="songzhong" onclick="songzhong()"></div>
+            <div id="baosang" onclick="baosang()"></div>
+            <div id="zhaohun" onclick="zhaohun()"></div>
+            <div id="diaoyan" onclick="diaoyan()"></div>
+            <div id="rulian" onclick="rulian()"></div>
+            <div id="qiling" onclick="qiling()"></div>
+            <div id="songsang" onclick="songsang()"> </div>
+            <div id="xiazang" onclick="xiazang()"></div>
+            <div id="zuoqi" onclick="zuoqi()"></div>
         </div>
 
-         <!-- 谛谛出殡1 --> 
-        <div id="didi1">
-            <div id="didi1bg"></div>
-            <div id="didi1logo" onclick="didi1()"></div>
+        <div id="story4-songzhong"></div>
+        <div id="story4-baosang"></div>
+        <div id="story4-zhaohun"></div>
+        <div id="story4-diaoyan"></div>
+        <div id="story4-rulian"></div>
+        <div id="story4-qiling"></div>
+        <div id="story4-songsang"></div>
+        <div id="story4-zuoqi"></div>
+        <div id="story4-xiazang"></div>
+
+        <div id="story4-18"></div>
+        <div id="story4-19"></div>
+        <div id="story4-20"></div>
+        <div id="story4-21"></div>
+        <div id="story4-22"></div>
+        <div id="story4-23"></div>
+        <div id="story4-24"></div>
+        <div id="story4-25"></div>
+        <div id="story4-26"></div>
+        <div id="story4-27"></div>
+        <div id="story4-28"></div>
+        <div id="story4-29"></div>
+        <div id="story4-30"></div>
+        <div id="story4-31"></div>
+        <div id="story4-32"></div>
+        <div id="story4-33"></div>
+        <div id="story4-34"></div>
+        <div id="story4-35"></div>
+        <div id="story4-36"></div>
+        <div id="story4-37"></div>
+        <div id="story4-38"></div>
+        <div id="story4-39"></div>
+        <div id="story4-40"></div>
+        <div id="story4-41"></div>
+        <div id="story4-42"></div>
+
+        <div id="end4"></div>
+        <div id="end4btn" onclick="story4end()"></div>
+    </div>
+
+    <div id="story5">
+
+        <div class="story5backhome" onclick="story5backhome()"></div>
+        <div class="story5backhomejudge">
+            <div   id="judge1-sure" onclick="story5backhome1()"></div>
+            <div   id="judge1-notsure" onclick="story5backhome2()"></div>
+            <div   id="backhoumejudegebg"></div>
+        () </div>
+            <div class="nextbtn" id="story5-1-next" onclick="story5next1()"></div>
+            <div class="nextbtn" id="story5-2-next" onclick="story5next2()"></div>
+            <div class="nextbtn" id="story5-3-next" onclick="story5next3()"></div>
+            <div class="nextbtn" id="story5-4-next" onclick="story5next4()"></div>
+            <div class="nextbtn" id="story5-5-next" onclick="story5next5()"></div>
+            <div class="nextbtn" id="story5-6-next" onclick="story5next6()"></div>
+            <div class="nextbtn" id="story5-7-next" onclick="story5next7()"></div>
+            <div class="nextbtn" id="story5-8-next" onclick="story5next8()"></div>
+            <div class="nextbtn" id="story5-9-next" onclick="story5next9()"></div>
+            <div class="nextbtn" id="story5-10-next" onclick="story5next10()"></div>
+            <div class="nextbtn" id="story5-11-next" onclick="story5next11()"></div>
+            <div class="nextbtn" id="story5-12-next" onclick="story5next12()"></div>
+            <div class="nextbtn" id="story5-13-next" onclick="story5next13()"></div>
+            <div class="nextbtn" id="story5-14-next" onclick="story5next14()"></div>
+            <div class="nextbtn" id="story5-15-next" onclick="story5next15()"></div>
+            <div class="nextbtn" id="story5-16-next" onclick="story5next16()"></div>
+            <div class="nextbtn" id="story5-17-next" onclick="story5next17()"></div>
+            <div class="nextbtn" id="story5-18-next" onclick="story5next18()"></div>
+            <div class="nextbtn" id="story5-19-next" onclick="story5next19()"></div>
+            <div class="nextbtn" id="story5-20-next" onclick="story5next20()"></div>
+            <div class="nextbtn" id="story5-21-next" onclick="story5next21()"></div>
+            <div class="nextbtn" id="story5-22-next" onclick="story5next22()"></div>
+            <div class="nextbtn" id="story5-23-next" onclick="story5next23()"></div>
+            <div class="nextbtn" id="story5-24-next" onclick="story5next24()"></div>
+            <div class="nextbtn" id="story5-25-next" onclick="story5next25()"></div>
+            <div class="nextbtn" id="story5-26-next" onclick="story5next26()"></div>
+            <div class="nextbtn" id="story5-27-next" onclick="story5next27()"></div>
+            <div class="nextbtn" id="story5-28-next" onclick="story5next28()"></div>
+            <div class="nextbtn" id="story5-29-next" onclick="story5next29()"></div>
+            <div class="nextbtn" id="story5-30-next" onclick="story5next30()"></div>
+            <div class="nextbtn" id="story5-31-next" onclick="story5next31()"></div>
+            <div class="nextbtn" id="story5-32-next" onclick="story5next32()"></div>
+            <div class="nextbtn" id="story5-33-next" onclick="story5next33()"></div>
+            <div class="nextbtn" id="story5-34-next" onclick="story5next34()"></div>
+            <div class="nextbtn" id="story5-35-next" onclick="story5next35()"></div>
+            <div class="nextbtn" id="story5-36-next" onclick="story5next36()"></div>
+            <div class="nextbtn" id="story5-37-next" onclick="story5next37()"></div>
+            <div class="nextbtn" id="story5-38-next" onclick="story5next38()"></div>
+            <div class="nextbtn" id="story5-39-next" onclick="story5next39()"></div>
+            <div class="nextbtn" id="story5-40-next" onclick="story5next40()"></div>
+            <div class="nextbtn" id="story5-41-next" onclick="story5next41()"></div>
+            <div class="nextbtn" id="story5-42-next" onclick="story5next42()"></div>
+            <div class="nextbtn" id="story5-43-next" onclick="story5next43()"></div>
+            <div class="nextbtn" id="story5-44-next" onclick="story5next44()"></div>
+            <div class="nextbtn" id="story5-45-next" onclick="story5next45()"></div>
+            <div class="nextbtn" id="story5-46-next" onclick="story5next46()"></div>
+            <div class="nextbtn" id="story5-47-next" onclick="story5next47()"></div>
+            <div class="nextbtn" id="story5-48-next" onclick="story5next48()"></div>
+            <div class="nextbtn" id="story5-49-next" onclick="story5next49()"></div>
+            <div class="nextbtn" id="story5-50-next" onclick="story5next50()"></div>
+            <div class="nextbtn" id="story5-51-next" onclick="story5next51()"></div>
+            <div class="nextbtn" id="story5-52-next" onclick="story5next52()"></div>
+                    
+            <div id="story5-1"></div>
+            <div id="story5-2"></div>
+            <div id="story5-3"></div>
+            <div id="story5-4"></div>
+            <div id="story5-5"></div>
+            <div id="story5-6"></div>
+            <div id="story5-7"></div>
+            <div id="story5-8"></div>
+            <div id="story5-9"></div>
+            <div id="story5-10"></div>
+            <div id="story5-11"></div>
+            <div id="story5-12"></div>
+            <div id="story5-13"></div>
+            <div id="story5-14"></div>
+            <div id="story5-15"></div>
+            <div id="story5-16"></div>
+            <div id="story5-17"></div>
+            <div id="story5-18"></div>
+            <div id="story5-19"></div>
+            <div id="story5-20"></div>
+            <div id="story5-21"></div>
+            <div id="story5-22"></div>
+            <div id="story5-23"></div>
+            <div id="story5-24"></div>
+            <div id="story5-25"></div>
+            <div id="story5-26"></div>
+            <div id="story5-27"></div>
+            <div id="story5-28"></div>
+            <div id="story5-29"></div>
+            <div id="story5-30"></div>
+            <div id="story5-31"></div>
+            <div id="story5-32"></div>
+            <div id="story5-33"></div>
+            <div id="story5-34"></div>
+            <div id="story5-35"></div>
+            <div id="story5-36"></div>
+            <div id="story5-37"></div>
+            <div id="story5-38"></div>
+            <div id="story5-39"></div>
+            <div id="story5-40"></div>
+            <div id="story5-41"></div>
+            <div id="story5-42"></div>
+            <div id="story5-43"></div>
+            <div id="story5-44"></div>
+            <div id="story5-45"></div>
+            <div id="story5-46"></div>
+            <div id="story5-47"></div>
+            <div id="story5-48"></div>
+            <div id="story5-49"></div>
+            <div id="story5-50"></div>
+            <div id="story5-51"></div>
+            <div id="story5-52"></div>
+
+            <div id="end5"></div>
+            <div id="end5btn" onclick="story5end()"></div>
+    
+    </div>
+
+    <div id="story6">
+
+        <div class="story6backhome" onclick="story6backhome()"></div>
+        <div class="story6backhomejudge">
+            <div   id="judge1-sure" onclick="story6backhome1()"></div>
+            <div   id="judge1-notsure" onclick="story6backhome2()"></div>
+            <div   id="backhoumejudegebg"></div>
         </div>
 
-        <!-- 谛谛出殡2 --> 
-        <div id="didi2">
-            <div id="didi2bg"></div>
-            <div id="getnew" onclick="getnew()"></div>
-            <div id="shootnew" onclick="shootnew()"></div>
-            <div id="zhuangtai"></div>
-            <div id="car1" onclick="car1()"></div>
-            <div id="car2" onclick="car2()"></div>
-            <div id="place1" onclick="place1()"></div>
-            <div id="place2" onclick="place2()"></div>
-            <div id="speed1" onclick="speed1()"></div>
-            <div id="speed2" onclick="speed2()"></div>
-            <div id="speed3" onclick="speed3()"></div>
-            <div id="liuceng1" onclick="liuceng1()"></div>
-            <div id="liuceng2" onclick="liuceng2()"></div>
-            <div id="liuceng3" onclick="liuceng3()"></div>
-            <div id="yitishu"></div>
-            <div id="chengjiu"></div>
-            <div id="didiback" onclick="didiback()"></div>
+        <div class="nextbtn" id="story6-1-next" onclick="story6next1()"></div>
+        <div class="nextbtn" id="story6-2-next" onclick="story6next2()"></div>
+        <div class="nextbtn" id="story6-3-next" onclick="story6next3()"></div>
+        <div class="nextbtn" id="story6-4-next" onclick="story6next4()"></div>
+        <div class="nextbtn" id="story6-5-next" onclick="story6next5()"></div>
+        <div class="nextbtn" id="story6-6-next" onclick="story6next6()"></div>
+        <div class="nextbtn" id="story6-7-next" onclick="story6next7()"></div>
+        <div class="nextbtn" id="story6-8-next" onclick="story6next8()"></div>
+        <div class="nextbtn" id="story6-9-next" onclick="story6next9()"></div>
+        <div class="nextbtn" id="story6-10-next" onclick="story6next10()"></div>
+        <div class="nextbtn" id="story6-11-next" onclick="story6next11()"></div>
+        <div class="nextbtn" id="story6-12-next" onclick="story6next12()"></div>
+        <div class="nextbtn" id="story6-13-next" onclick="story6next13()"></div>
+        <div class="nextbtn" id="story6-14-next" onclick="story6next14()"></div>
+        <div class="nextbtn" id="story6-15-next" onclick="story6next15()"></div>
+        <div class="nextbtn" id="story6-16-next" onclick="story6next16()"></div>
+        <div class="nextbtn" id="story6-17-next" onclick="story6next17()"></div>
+        <div class="nextbtn" id="story6-18-next" onclick="story6next18()"></div>
+        <div class="nextbtn" id="story6-19-next" onclick="story6next19()"></div>
+        <div class="nextbtn" id="story6-20-next" onclick="story6next20()"></div>
+        <div class="nextbtn" id="story6-21-next" onclick="story6next21()"></div>
+        <div class="nextbtn" id="story6-22-next" onclick="story6next22()"></div>
+        <div class="nextbtn" id="story6-23-next" onclick="story6next23()"></div>
+        <div class="nextbtn" id="story6-24-next" onclick="story6next24()"></div>
+        <div class="nextbtn" id="story6-25-next" onclick="story6next25()"></div>
+        <div class="nextbtn" id="story6-26-next" onclick="story6next26()"></div>
+        <div class="nextbtn" id="story6-27-next" onclick="story6next27()"></div>
+        <div class="nextbtn" id="story6-28-next" onclick="story6next28()"></div>
+        <div class="nextbtn" id="story6-29-next" onclick="story6next29()"></div>
+        <div class="nextbtn" id="story6-30-next" onclick="story6next30()"></div>
+        <div class="nextbtn" id="story6-31-next" onclick="story6next31()"></div>
+        <div class="nextbtn" id="story6-32-next" onclick="story6next32()"></div>
+        <div class="nextbtn" id="story6-33-next" onclick="story6next33()"></div>
+        <div class="nextbtn" id="story6-34-next" onclick="story6next34()"></div>
+        <div class="nextbtn" id="story6-35-next" onclick="story6next35()"></div>
+        <div class="nextbtn" id="story6-36-next" onclick="story6next36()"></div>
+        <div class="nextbtn" id="story6-37-next" onclick="story6next37()"></div>
+        <div class="nextbtn" id="story6-38-next" onclick="story6next38()"></div>
+        <div class="nextbtn" id="story6-39-next" onclick="story6next39()"></div>
+        <div class="nextbtn" id="story6-40-next" onclick="story6next40()"></div>
+        <div class="nextbtn" id="story6-41-next" onclick="story6next41()"></div>
+        
+        <div id="story6-1"></div>
+        <div id="story6-2"></div>
+        <div id="story6-3"></div>
+        <div id="story6-4"></div>
+        <div id="story6-5"></div>
+        <div id="story6-6"></div>
+        <div id="story6-7"></div>
+        <div id="story6-8"></div>
+        <div id="story6-9"></div>
+        <div id="story6-10"></div>
+        <div id="story6-11"></div>
+        <div id="story6-12"></div>
+        <div id="story6-13"></div>
+        <div id="story6-14"></div>
+        <div id="story6-15"></div>
+        <div id="story6-16"></div>
+        <div id="story6-17"></div>
+        <div id="story6-18"></div>
+        <div id="story6-19"></div>
+        <div id="story6-20"></div>
+        <div id="story6-21"></div>
+        <div id="story6-22"></div>
+        <div id="story6-23"></div>
+        <div id="story6-24"></div>
+        <div id="story6-25"></div>
+        <div id="story6-26"></div>
+        <div id="story6-27"></div>
+        <div id="story6-28"></div>
+        <div id="story6-29"></div>
+        <div id="story6-30"></div>
+        <div id="story6-31"></div>
+        <div id="story6-32"></div>
+        <div id="story6-33"></div>
+        <div id="story6-34"></div>
+        <div id="story6-35"></div>
+        <div id="story6-36"></div>
+        <div id="story6-37"></div>
+        <div id="story6-38"></div>
+        <div id="story6-39"></div>
+        <div id="story6-40"></div>
+        <div id="story6-41"></div>
+        
+
+        <div id="story6-special">
+            <div id="qin" onclick="qin()"></div>
+            <div id="shouyi" onclick="shouyi()"></div>
+            <div id="shouxie" onclick="shouxie()"></div>
+            <div id="shoumao" onclick="shoumao()"></div>
+            <div id="shoubei" onclick="shoubei()"></div>
         </div>
 
-        <!-- 黑幕 --> 
-        <div class="bbb">
+        <div id="story6-qin"></div>
+        <div id="story6-shouyi"></div>
+        <div id="story6-shouxie"></div>
+        <div id="story6-shoumao"></div>
+        <div id="story6-shoubei"></div>
+
+    
+        <div id="story6-42"></div>
+        <div id="choose">
+            <div id="cloth1"></div>
+            <div id="cloth2"></div>
+            <div id="cloth3"></div>
+            <div id="cloth4"></div>
+            <div id="cloth1name"></div>
+            <div id="cloth2name"></div>
+            <div id="cloth3name"></div>
+            <div id="cloth4name"></div>
+            <div class="clothbtn" id="cloth1nextbtn" onclick="cloth1()"></div>
+            <div class="clothbtn" id="cloth2nextbtn" onclick="cloth2()"></div>
+            <div class="clothbtn" id="cloth3nextbtn" onclick="cloth3()"></div>
+            <div class="clothbtn" id="cloth4nextbtn" onclick="cloth4()"></div>
+            <div id="choosefinish" onclick="choosefinish()"></div>
+        </div>
+        
+        <div id="end6"></div>
+        <div id="defen"></div>
+        <div id="end6btn" onclick="story6end()"></div>
+
+
+    </div>
+
+    <div id="story7">
+    <div class="story7backhome" onclick="story7backhome()"></div>
+    <div class="story7backhomejudge">
+        <div   id="judge1-sure" onclick="story7backhome1()"></div>
+        <div   id="judge1-notsure" onclick="story7backhome2()"></div>
+        <div   id="backhoumejudegebg"></div>
+    </div>
+
+        <div class="nextbtn" id="story7-1-next" onclick="story7next1()"></div>
+        <div class="nextbtn" id="story7-2-next" onclick="story7next2()"></div>
+        <div class="nextbtn" id="story7-3-next" onclick="story7next3()"></div>
+        <div class="nextbtn" id="story7-4-next" onclick="story7next4()"></div>
+        <div class="nextbtn" id="story7-5-next" onclick="story7next5()"></div>
+        <div class="nextbtn" id="story7-6-next" onclick="story7next6()"></div>
+        <div class="nextbtn" id="story7-7-next" onclick="story7next7()"></div>
+        <div class="nextbtn" id="story7-8-next" onclick="story7next8()"></div>
+        <div class="nextbtn" id="story7-9-next" onclick="story7next9()"></div>
+        <div class="nextbtn" id="story7-10-next" onclick="story7next10()"></div>
+        <div class="nextbtn" id="story7-11-next" onclick="story7next11()"></div>
+        <div class="nextbtn" id="story7-12-next" onclick="story7next12()"></div>
+        <div class="nextbtn" id="story7-13-next" onclick="story7next13()"></div>
+        <div class="nextbtn" id="story7-14-next" onclick="story7next14()"></div>
+        <div class="nextbtn" id="story7-15-next" onclick="story7next15()"></div>
+        <div class="nextbtn" id="story7-16-next" onclick="story7next16()"></div>
+        <div class="nextbtn" id="story7-17-next" onclick="story7next17()"></div>
+        <div class="nextbtn" id="story7-18-next" onclick="story7next18()"></div>
+        <div class="nextbtn" id="story7-19-next" onclick="story7next19()"></div>
+        <div class="nextbtn" id="story7-20-next" onclick="story7next20()"></div>
+        <div class="nextbtn" id="story7-21-next" onclick="story7next21()"></div>
+        <div class="nextbtn" id="story7-22-next" onclick="story7next22()"></div>
+        <div class="nextbtn" id="story7-23-next" onclick="story7next23()"></div>
+        <div class="nextbtn" id="story7-24-next" onclick="story7next24()"></div>
+        <div class="nextbtn" id="story7-25-next" onclick="story7next25()"></div>
+        <div class="nextbtn" id="story7-26-next" onclick="story7next26()"></div>
+        <div class="nextbtn" id="story7-27-next" onclick="story7next27()"></div>
+        
+        <div class="nextbtn" id="story7-29-next" onclick="story7next29()"></div>
+        <div class="nextbtn" id="story7-30-next" onclick="story7next30()"></div>
+        <div class="nextbtn" id="story7-31-next" onclick="story7next31()"></div>
+        <div class="nextbtn" id="story7-32-next" onclick="story7next32()"></div>
+        <div class="nextbtn" id="story7-33-next" onclick="story7next33()"></div>
+        <div class="nextbtn" id="story7-34-next" onclick="story7next34()"></div>
+        <div class="nextbtn" id="story7-35-next" onclick="story7next35()"></div>
+        <div class="nextbtn" id="story7-36-next" onclick="story7next36()"></div>
+        <div class="nextbtn" id="story7-37-next" onclick="story7next37()"></div>
+        <div class="nextbtn" id="story7nextcidai" onclick="story7nextcidai()"></div>
+
+        <div id="story7-1"></div>
+        <div id="story7-2"></div>
+        <div id="story7-3"></div>
+        <div id="story7-4"></div>
+        <div id="story7-5"></div>
+        <div id="story7-6"></div>
+        <div id="story7-7"></div>
+        <div id="story7-8"></div>
+        <div id="story7-9"></div>
+        <div id="story7-10"></div>
+        <div id="story7-11"></div>
+        <div id="story7-12"></div>
+        <div id="story7-13"></div>
+        <div id="story7-14"></div>
+        <div id="story7-15"></div>
+        <div id="story7-16"></div>
+        <div id="story7-17"></div>
+        <div id="story7-18"></div>
+        <div id="story7-19"></div>
+        <div id="story7-20"></div>
+        <div id="story7-21"></div>
+        <div id="story7-22"></div>
+        <div id="story7-23"></div>
+        <div id="story7-24"></div>
+        <div id="story7-25"></div>
+        <div id="story7-26"></div>
+        <div id="story7-27"></div>
+
+        <div id="story7-29"></div>
+        <div id="story7-30"></div>
+        <div id="story7-31"></div>
+        <div id="story7-32"></div>
+        <div id="story7-33"></div>
+        <div id="story7-34"></div>
+        <div id="story7-35"></div>
+        <div id="story7-36"></div>
+        <div id="story7-37"></div>
+
+        <div id="story7-special">
+            <div id="bo" onclick="bo()"></div>
+            <div id="erhu" onclick="erhu()"></div>
+            <div id="luo" onclick="luo()"></div>
+            <div id="sheng" onclick="sheng()"></div>
+            <div id="suona" onclick="suona()"></div>
+            <div id="zhuangzhong" onclick="zhuangzhong()"></div>
         </div>
 
+        <div id="story7-cidai">
+            <div id="cidai1" onclick="cidai1()"></div>
+            <div id="cidai2" onclick="cidai2()"></div>
+            <div id="cidai3" onclick="cidai3()"></div>
+            <div id="cidai4" onclick="cidai4()"></div>
+            <div id="cidaibg"></div>
+        </div>
+
+        <div id="story7-bo"></div>
+        <div id="story7-luo"></div>
+        <div id="story7-suona"></div>
+        <div id="story7-erhu"></div>
+        <div id="story7-sheng"></div>
+        <div id="story7-zhuangzhong"></div>
+
+        
+        <div id="end7"></div>
+        <div id="end7btn" onclick="story7end()"></div>
+
+    </div>
+
+    <div id="story8">
+        <div class="story8backhome" onclick="story8backhome()"></div>
+    <div class="story8backhomejudge">
+        <div   id="judge1-sure" onclick="story8backhome1()"></div>
+        <div   id="judge1-notsure" onclick="story8backhome2()"></div>
+        <div   id="backhoumejudegebg"></div>
+    </div>
+        <div id="story8-1"></div>
+        <div id="story8-2"></div>
+        <div id="story8-3"></div>
+        <div id="story8-4"></div>
+        <div id="story8-5"></div>
+        <div id="story8-6"></div>
+        <div id="story8-7"></div>
+        <div id="story8-8"></div>
+        <div id="story8-9"></div>
+        <div id="story8-10"></div>
+        <div id="story8-11"></div>
+        <div id="story8-12"></div>
+        <div id="story8-13"></div>
+        <div id="story8-14"></div>
+        <div id="story8-15"></div>
+        <div id="story8-16"></div>
+        <div id="story8-17"></div>
+        <div id="story8-18"></div>
+        <div id="story8-19"></div>
+        <div id="story8-20"></div>
+        <div id="story8-21"></div>
+        <div id="story8-22"></div>
+        <div id="story8-23"></div>
+        <div id="story8-24"></div>
+        <div id="story8-25"></div>
+        <div id="story8-26"></div>
+        <div id="story8-27"></div>
+        <div id="story8-28"></div>
+        <div id="story8-29"></div>
+        <div id="story8-30"></div>
+        <div id="story8-31"></div>
+        <div id="story8-32"></div>
+        <div id="story8-33"></div>
+        <div id="story8-34"></div>
+        <div id="story8-35"></div>
+        <div id="story8-36"></div>
+        <div id="story8-37"></div>
+        <div id="story8-38"></div>
+        <div id="story8-39"></div>
+        <div id="story8-40"></div>
+        <div id="story8-41"></div>
+        <div id="story8-42"></div>
+        <div id="story8-43"></div>
+        <div id="story8-44"></div>
+        <div id="story8-45"></div>
+        <div id="story8-46"></div>
+        <div id="story8-47"></div>
+        <div id="story8-48"></div>
+        <div id="story8-49"></div>
+        <div id="story8-50"></div>
+        <div id="story8-51"></div>
+        <div id="story8-52"></div>
+        <div id="story8-53"></div>
+        <div id="story8-54"></div>
+        <div id="story8-55"></div>
+        <div id="story8-56"></div>
+        <div id="story8-57"></div>
+        <div id="story8-58"></div>
+        <div id="story8-59"></div>
+
+        <div class="nextbtn" id="story8-1-next" onclick="story8next1()"></div>
+        <div class="nextbtn" id="story8-2-next" onclick="story8next2()"></div>
+        <div class="nextbtn" id="story8-3-next" onclick="story8next3()"></div>
+        <div class="nextbtn" id="story8-4-next" onclick="story8next4()"></div>
+        <div class="nextbtn" id="story8-5-next" onclick="story8next5()"></div>
+        <div class="nextbtn" id="story8-6-next" onclick="story8next6()"></div>
+        <div class="nextbtn" id="story8-7-next" onclick="story8next7()"></div>
+        <div class="nextbtn" id="story8-8-next" onclick="story8next8()"></div>
+        <div class="nextbtn" id="story8-9-next" onclick="story8next9()"></div>
+        <div class="nextbtn" id="story8-10-next" onclick="story8next10()"></div>
+        <div class="nextbtn" id="story8-11-next" onclick="story8next11()"></div>
+        <div class="nextbtn" id="story8-12-next" onclick="story8next12()"></div>
+        <div class="nextbtn" id="story8-13-next" onclick="story8next13()"></div>
+        <div class="nextbtn" id="story8-14-next" onclick="story8next14()"></div>
+        <div class="nextbtn" id="story8-15-next" onclick="story8next15()"></div>
+        <div class="nextbtn" id="story8-16-next" onclick="story8next16()"></div>
+        <div class="nextbtn" id="story8-17-next" onclick="story8next17()"></div>
+        <div class="nextbtn" id="story8-18-next" onclick="story8next18()"></div>
+        <div class="nextbtn" id="story8-19-next" onclick="story8next19()"></div>
+        <div class="nextbtn" id="story8-20-next" onclick="story8next20()"></div>
+        <div class="nextbtn" id="story8-21-next" onclick="story8next21()"></div>
+        <div class="nextbtn" id="story8-22-next" onclick="story8next22()"></div>
+        <div class="nextbtn" id="story8-23-next" onclick="story8next23()"></div>
+        <div class="nextbtn" id="story8-24-next" onclick="story8next24()"></div>
+        <div class="nextbtn" id="story8-25-next" onclick="story8next25()"></div>
+        <div class="nextbtn" id="story8-26-next" onclick="story8next26()"></div>
+        <div class="nextbtn" id="story8-27-next" onclick="story8next27()"></div>
+        <div class="nextbtn" id="story8-28-next" onclick="story8next28()"></div>
+        <div class="nextbtn" id="story8-29-next" onclick="story8next29()"></div>
+        <div class="nextbtn" id="story8-30-next" onclick="story8next30()"></div>
+        <div class="nextbtn" id="story8-31-next" onclick="story8next31()"></div>
+        <div class="nextbtn" id="story8-32-next" onclick="story8next32()"></div>
+        <div class="nextbtn" id="story8-33-next" onclick="story8next33()"></div>
+        <div class="nextbtn" id="story8-34-next" onclick="story8next34()"></div>
+        <div class="nextbtn" id="story8-35-next" onclick="story8next35()"></div>
+        <div class="nextbtn" id="story8-36-next" onclick="story8next36()"></div>
+        <div class="nextbtn" id="story8-37-next" onclick="story8next37()"></div>
+        <div class="nextbtn" id="story8-38-next" onclick="story8next38()"></div>
+        <div class="nextbtn" id="story8-39-next" onclick="story8next39()"></div>
+        <div class="nextbtn" id="story8-40-next" onclick="story8next40()"></div>
+        <div class="nextbtn" id="story8-41-next" onclick="story8next41()"></div>
+        <div class="nextbtn" id="story8-42-next" onclick="story8next42()"></div>
+        <div class="nextbtn" id="story8-43-next" onclick="story8next43()"></div>
+        <div class="nextbtn" id="story8-44-next" onclick="story8next44()"></div>
+        <div class="nextbtn" id="story8-45-next" onclick="story8next45()"></div>
+        <div class="nextbtn" id="story8-46-next" onclick="story8next46()"></div>
+        <div class="nextbtn" id="story8-47-next" onclick="story8next47()"></div>
+        <div class="nextbtn" id="story8-48-next" onclick="story8next48()"></div>
+        <div class="nextbtn" id="story8-49-next" onclick="story8next49()"></div>
+        <div class="nextbtn" id="story8-50-next" onclick="story8next50()"></div>
+        <div class="nextbtn" id="story8-51-next" onclick="story8next51()"></div>
+        <div class="nextbtn" id="story8-52-next" onclick="story8next52()"></div>
+        <div class="nextbtn" id="story8-53-next" onclick="story8next53()"></div>
+        <div class="nextbtn" id="story8-54-next" onclick="story8next54()"></div>
+        <div class="nextbtn" id="story8-55-next" onclick="story8next55()"></div>
+        <div class="nextbtn" id="story8-56-next" onclick="story8next56()"></div>
+        <div class="nextbtn" id="story8-57-next" onclick="story8next57()"></div>
+        <div class="nextbtn" id="story8-58-next" onclick="story8next58()"></div>
+        <div class="nextbtn" id="story8-59-next" onclick="story8next59()"></div>
+    
+        <div id="end8"></div>
+        <div id="end8btn" onclick="story8end()"></div>
+    </div>
+
+        <!-- 谛谛出殡1 --> 
+    <div id="didi1">
+        <div id="didi1bg"></div>
+        <div id="didi1logo" onclick="didi1()"></div>
+    </div>
+
+    <!-- 谛谛出殡2 --> 
+    <div id="didi2">
+        <div id="didi2bg"></div>
+        <div id="getnew" onclick="getnew()"></div>
+        <div id="shootnew" onclick="shootnew()"></div>
+        <div id="zhuangtai"></div>
+        <div id="car1" onclick="car1()"></div>
+        <div id="car2" onclick="car2()"></div>
+        <div id="place1" onclick="place1()"></div>
+        <div id="place2" onclick="place2()"></div>
+        <div id="speed1" onclick="speed1()"></div>
+        <div id="speed2" onclick="speed2()"></div>
+        <div id="speed3" onclick="speed3()"></div>
+        <div id="liuceng1" onclick="liuceng1()"></div>
+        <div id="liuceng2" onclick="liuceng2()"></div>
+        <div id="liuceng3" onclick="liuceng3()"></div>
+        <div id="yitishu"></div>
+        <div id="chengjiu"></div>
+        <div id="didiback" onclick="didiback()"></div>
+    </div>
+
+    <!-- 黑幕 --> 
+    <div class="bbb">
+    </div>
+    
+</div>>
     </body>
