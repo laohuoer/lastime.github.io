@@ -4,6 +4,16 @@ document.onreadystatechange = function () { //即在加载的过程中执行下�
         $('#border').show();
     }
 
+    if (document.readyState == "loading") {
+        $('.loading').show();
+        $('#border').show();
+    }
+
+    if (document.readyState == "interactive") {
+        $('.loading').show();
+        $('#border').show();
+    }
+
     if (document.readyState == "complete") { //complete加载完成
         $('.first').show();
         $('.loading').hide();
