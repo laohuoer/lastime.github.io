@@ -6,7 +6,7 @@ html {
 body {
     padding: 0;
     margin: 0;
-    background-image: url('https://ae01.alicdn.com/kf/Uc71eeb1242384ea6a1f34b8b05570b3eG.jpg');
+    background-image: url('./img/bigback.jpg');
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -36,7 +36,7 @@ iframe {
     margin-left: -562px;
     margin-top: -368px;
     z-index: 2000000;
-    background-image: url('https://ae01.alicdn.com/kf/U55cfe79da7844b08a08251fb9438485bF.jpg');
+    background-image: url('./img/bigborder.jpg');
     background-size: cover;
     pointer-events: none;
     filter: brightness(90%);
